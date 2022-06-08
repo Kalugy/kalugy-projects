@@ -16,9 +16,45 @@
     min-height: 100%;
     max-width: 100%;
     max-height: 100%;
+    position: absolute;
 }
+
+.profile-pick{
+    min-width: 10%;
+    min-height: 10%;
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 50%;
+    top: 30%;
+    left: 3rem;
+    position: absolute;
+}
+
 
 .overlay{
     position: absolute;
     top: 50%;
+    color: #ddffff;
+    left: 2rem;
 }
+
+.overlay2{
+    position: absolute;
+    top: 5%;
+    color: black;
+    left: 20%;
+
+}
+.overlay2 h1{
+    margin: .5rem;
+}
+.overlay2 p{
+    margin: .7rem;
+}
+
+.list-examples{
+    padding-left: 1.5rem;
+}
+
+
+

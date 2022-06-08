@@ -5,11 +5,14 @@
   box-sizing: border-box;
   text-decoration: none;
   outline: none; border:none;
+}
+
+h1{
   text-transform: capitalize;
 }
 
 html{
-  font-size: 75%;
+  font-size: 90%;
   overflow-x: hidden;
 }
 
