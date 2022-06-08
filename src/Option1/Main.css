@@ -33,9 +33,9 @@
 
 .overlay{
     position: absolute;
-    top: 50%;
+    top: 49%;
     color: #ddffff;
-    left: 2rem;
+    left: 3.5rem;
 }
 
 .overlay2{
@@ -56,5 +56,27 @@
     padding-left: 1.5rem;
 }
 
-
+@media (max-width:900px){
+    .overlay{
+        top: 7%;
+        left: 45%;
+        color: black;
+    }
+    .overlay2{
+        top: 20%;
+        color: black;
+        left: 20%;
+    
+    }
+    .profile-pick{
+        top: 1%;
+        left: 20%;
+        min-width: 10%;
+        min-height: 10%;
+        max-width: 20%;
+        max-height: 20%;
+        border-radius: 50%;
+    }
+    
+}
 

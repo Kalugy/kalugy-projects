@@ -20,10 +20,10 @@ body{
   background:var(--backgroundcolor);
 }
 
-@media (max-width:1300px){
+@media (max-width:1200px){
   
   html{
-      font-size: 55%;
+      font-size: 75%;
   }
 
 }
