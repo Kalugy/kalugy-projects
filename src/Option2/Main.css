@@ -1,0 +1,90 @@
+.main-section2{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    float: left;
+    position: relative;
+}
+
+
+
+.main-section2 .responsive-image{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+
+.main-section2 .profile-pick{
+    min-width: 10%;
+    min-height: 10%;
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 50%;
+    top: 30%;
+    left: 3rem;
+    position: absolute;
+}
+
+
+.main-section2 .overlay{
+    position: absolute;
+    top: 52%;
+    color: #e2e2e2;
+    left: 4%;
+}
+
+.main-section2 .overlay2{
+    position: absolute;
+    top: 5%;
+    color: black;
+    left: 20%;
+
+}
+.main-section2 .overlay2 h1{
+    margin: .5rem;
+}
+.main-section2 .overlay2 p{
+    margin: .7rem;
+}
+
+.main-section2 .list-examples{
+    padding-left: 1.5rem;
+}
+
+@media (max-width:900px){
+    .main-section2 .overlay{
+        top: 7%;
+        left: 45%;
+        color: black;
+    }
+    .main-section2 .overlay2{
+        top: 20%;
+        color: black;
+        left: 20%;
+    
+    }
+    .main-section2 .profile-pick{
+        top: 1%;
+        left: 20%;
+        min-width: 10%;
+        min-height: 10%;
+        max-width: 20%;
+        max-height: 20%;
+        border-radius: 50%;
+    }
+    
+}
+@media (max-width:450px){
+    .main-section2 .profile-pick{
+        top: 2%;
+        left: 20%;
+        min-width: 15%;
+        min-height: 15%;
+        max-width: 25%;
+        max-height: 25%;
+        border-radius: 50%;
+    }
+    
+}

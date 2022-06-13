@@ -1,0 +1,734 @@
+
+.main-section2 section .overlay2 p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+  
+
+
+@keyframes hallo {
+    from{
+        transform: translateX(10%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fadein {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.animate-circle{
+    width: 5%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: 10%;
+    border-radius: 50%;
+    animation: fadein 4s ease-in;
+    /*animation-name: hallo;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: fade-in;*/
+}
+
+
+.title-option2{
+    animation: fadein 4s ease-in;    
+}
+
+@keyframes test {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background{
+    background: black;
+    width: 100%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test2 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background2{
+    background: black;
+    width: 12.1%;
+    height: 2%;
+    position: relative;
+    z-index: 100;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes test3 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background3{
+    background: black;
+    width: 12.2%;
+    height: 2%;
+    position: relative;
+    animation-name: test2;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test4 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background4{
+    background: black;
+    width: 12.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test4;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test5 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background5{
+    background: black;
+    width: 12.5%;
+    height: 2%;
+    position: relative;
+    animation-name: test5;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test6 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background6{
+    background: black;
+    width: 12.6%;
+    height: 2%;
+    position: relative;
+    animation-name: test6;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test7 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background7{
+    background: black;
+    width: 12.7%;
+    height: 2%;
+    position: relative;
+    animation-name: test7;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+
+@keyframes test8 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background8{
+    background: black;
+    width: 12.8%;
+    height: 2%;
+    position: relative;
+    animation-name: test8;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes test9 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background9{
+    background: black;
+    width: 12.9%;
+    height: 2%;
+    position: relative;
+    animation-name: test9;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+/*******************/
+@keyframes test10 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background10{
+    background: black;
+    width: 13%;
+    height: 2%;
+    position: relative;
+    animation-name: test10;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test11 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background11{
+    background: black;
+    width: 13.2%;
+    height: 2%;
+    position: relative;
+    animation-name: test11;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test12 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background12{
+    background: black;
+    width: 13.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test12;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test13 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background13{
+    background: black;
+    width: 13.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test13;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test14 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background14{
+    background: black;
+    width: 13.4%;
+    height: 2%;
+    position: relative;
+    animation-name: test14;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes test15 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.animate-background15{
+    background: black;
+    width: 13.5%;
+    height: 2%;
+    position: relative;
+    animation-name: test15;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background16{
+    background: black;
+    width: 13.6%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+.animate-background17{
+    background: black;
+    width: 13.7%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+.animate-background18{
+    background: black;
+    width: 13.8%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background19{
+    background: black;
+    width: 13.9%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background20{
+    background: black;
+    width: 14%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background21{
+    background: black;
+    width: 14.1%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background22{
+    background: black;
+    width: 14.2%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background23{
+    background: black;
+    width: 14.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background24{
+    background: black;
+    width: 14.4%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background25{
+    background: black;
+    width: 14.5%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background26{
+    background: black;
+    width: 14.4%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background27{
+    background: black;
+    width: 14.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background28{
+    background: black;
+    width: 14.2%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background29{
+    background: black;
+    width: 14.1%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background30{
+    background: black;
+    width: 14%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background31{
+    background: black;
+    width: 13.9%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background32{
+    background: black;
+    width: 13.8%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background33{
+    background: black;
+    width: 13.7%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background34{
+    background: black;
+    width: 13.6%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background35{
+    background: black;
+    width: 13.5%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background36{
+    background: black;
+    width: 13.4%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background37{
+    background: black;
+    width: 13.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background38{
+    background: black;
+    width: 13.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background39{
+    background: black;
+    width: 13.1%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background40{
+    background: black;
+    width: 12.9%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background41{
+    background: black;
+    width: 12.8%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background42{
+    background: black;
+    width: 12.7%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background43{
+    background: black;
+    width: 12.6%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background44{
+    background: black;
+    width: 12.5%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background45{
+    background: black;
+    width: 12.4%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background46{
+    background: black;
+    width: 12.4%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background47{
+    background: black;
+    width: 12.3%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background48{
+    background: black;
+    width: 12.2%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background49{
+    background: black;
+    width: 12.1%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.animate-background50{
+    background: black;
+    width: 100%;
+    height: 2%;
+    position: relative;
+    animation-name: test;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}

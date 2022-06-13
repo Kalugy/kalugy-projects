@@ -58,13 +58,6 @@
     transform: translateY(8px);
   }
   
-.close {
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	transition: background .6s;
-}
 
 /* closing animation */
 #active:checked + .menu-btn span {
@@ -77,6 +70,11 @@
 #active:checked + .menu-btn:after {
 	transform: rotate(-45deg);
   border-color: #fff;
+}
+
+#active:checked .closest {
+  border-color: #fff;
+  background-color: red;
 }
 
 
