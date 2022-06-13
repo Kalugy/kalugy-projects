@@ -53,9 +53,9 @@ function PageTransitions(){
     console.log("wtf",allSections)
     //allSections.forEach((section))
     
-    allSections.addEventListener('click', (e) => {
-        console.log(e.target)
-    })
+    //allSections.addEventListener('click', (e) => {
+    //    console.log(e.target)
+    //})
 
 }
 
