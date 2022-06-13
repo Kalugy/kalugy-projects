@@ -8,7 +8,8 @@ import RouterNav from './Router/RouterNav';
 function App() {
   return (
     <div>
-      <RouterNav></RouterNav>      
+      <RouterNav></RouterNav>    
+      <MenuBar></MenuBar>  
     </div>
   );
 }

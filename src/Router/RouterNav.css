@@ -1,0 +1,25 @@
+#collider-button-nav{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+}
+
+#collider-button-nav:checked + nav{
+    background-color: #00F;
+    padding-left: 50px;
+    transform: translateY(-50px);
+}
+
+
+
+
+.nav-test{
+    background-color: #000;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    padding-left: 50px;
+}
+

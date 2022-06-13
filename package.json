@@ -2,7 +2,7 @@
   "name": "projects-kalugy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kalugy.gitgub.io/kalugy-projects",
+  "homepage": "https://kalugy.gitgub.io/kalugy-projects/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -16,7 +16,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "set PORT=3001 && react-scripts start",
+    "start": "set PORT=3000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

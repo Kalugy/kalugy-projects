@@ -20,11 +20,8 @@ function MenuBar(){
                 
                 <BrowserRouter>
                 <ul>
-                    <li><Link to="test"><label htmlFor="active" className="closest">ddd</label>  </Link></li>
-                    <li><a>Version2</a></li>
-                    <li><a>Version3</a></li>
-                    <li><a>Version4</a></li>
-                    <li><a>Version5</a></li>
+                    <li><Link to="test"><label htmlFor="active" className="closest">TestMenu</label>  </Link></li>
+                    
                 </ul>
                     <Routes>
                     <Route path="/" element={<h1>dsa</h1>} />
