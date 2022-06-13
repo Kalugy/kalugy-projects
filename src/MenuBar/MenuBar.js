@@ -7,10 +7,10 @@ import {
     BrowserRouter
   } from "react-router-dom";
   
-  
 
 function MenuBar(){
     return(
+        
         <div>
             <input type="checkbox" className="menu-button" id="active"></input>
             <label htmlFor="active" className="menu-btn"><span></span></label>

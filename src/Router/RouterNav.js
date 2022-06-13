@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 
 import Option2 from '../Option2/Main'
+import Option3 from '../Option3/Option3'
+
 import Main from '../Option1/Main'
 import './RouterNav.css'
 
@@ -35,7 +37,7 @@ function RouterNav() {
       <Routes>
         <Route path="kalugy-projects/" element={<Main/>} />
         <Route path="kalugy-projects/v2" element={<Option2 />} />
-        <Route path="kalugy-projects/v3" element={<h1 style={paddingTest}>version3</h1>} />
+        <Route path="kalugy-projects/v3" element={<Option3/>} />
         <Route path="kalugy-projects/v4" element={<h1 style={paddingTest}>version4</h1>} />
       </Routes>
     </BrowserRouter>
