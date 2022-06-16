@@ -21,7 +21,7 @@
 .menu-navbar-main{
     position: fixed;
     top: 0;
-    height: 4%;
+    height: 2rem;
     z-index: 30;
     width: 100%;
     display: flex;
@@ -43,4 +43,11 @@
     padding: .2rem .4rem;
     border-radius: 10%;
     box-shadow: 0 3px 15px rgba(0, 0, 0,1);
+}
+
+@media screen and (max-width:1200px) {
+    
+    .nav-main-items .nav-main-item{
+        padding: .5rem .4rem;
+    }
 }
