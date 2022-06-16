@@ -1,25 +1,46 @@
-#collider-button-nav{
-    background-color: red;
-    position: fixed;
-    top: 0;
-    z-index: 15;
+
+
+.navbar-icon-con{
+    padding: .3rem .1rem;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+.navbar-icon-con i{
+    font-size: 1.5rem;
+    padding: .1rem .4rem;
 }
 
-#collider-button-nav:checked + nav{
-    background-color: #00F;
-    padding-left: 50px;
-    transform: translateY(-50px);
+.active-navbar-main-trans{
+    transform: translateY(-100px);
+    transition: all .3s ease-in-out;
 }
 
-
-
-
-.nav-test{
-    background-color: #000;
+.menu-navbar-main{
     position: fixed;
-    z-index: 10;
     top: 0;
+    height: 4%;
+    z-index: 30;
     width: 100%;
-    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
+.nav-main-items{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-left: .5rem;
+}
+
+.nav-main-items .nav-main-item{
+    background-color: black;
+    color: white;
+    border: solid .1rem rgb(28, 28, 28);
+    padding: .2rem .4rem;
+    border-radius: 10%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0,1);
+}

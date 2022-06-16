@@ -41,6 +41,7 @@ to {
     left: 10%;
     border-radius: 50%;
     animation: fadein 4s ease-in;
+    
     /*animation-name: hallo;
     animation-duration: 1s;
     animation-delay: 0;
@@ -85,7 +86,7 @@ to {
     width: 12.1%;
     height: 2%;
     position: relative;
-    z-index: 100;
+    z-index: 5;
     animation-name: test;
     animation-delay: 0;
     animation-timing-function: ease-in-out;
