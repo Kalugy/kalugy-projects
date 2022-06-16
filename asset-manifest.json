@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kalugy-projects/static/css/main.07a985fa.css",
-    "main.js": "/kalugy-projects/static/js/main.c32a70bf.js",
+    "main.js": "/kalugy-projects/static/js/main.2c97232e.js",
     "static/js/787.b7672cda.chunk.js": "/kalugy-projects/static/js/787.b7672cda.chunk.js",
     "static/media/portfolio.PNG": "/kalugy-projects/static/media/portfolio.340d425698358a977b85.PNG",
     "static/media/Photo.jpg": "/kalugy-projects/static/media/Photo.d794d38b17251f7d4bbc.jpg",
@@ -11,11 +11,11 @@
     "static/media/logo.svg": "/kalugy-projects/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/kalugy-projects/index.html",
     "main.07a985fa.css.map": "/kalugy-projects/static/css/main.07a985fa.css.map",
-    "main.c32a70bf.js.map": "/kalugy-projects/static/js/main.c32a70bf.js.map",
+    "main.2c97232e.js.map": "/kalugy-projects/static/js/main.2c97232e.js.map",
     "787.b7672cda.chunk.js.map": "/kalugy-projects/static/js/787.b7672cda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07a985fa.css",
-    "static/js/main.c32a70bf.js"
+    "static/js/main.2c97232e.js"
   ]
 }
