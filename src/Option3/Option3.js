@@ -41,18 +41,16 @@ function Option3(){
                 })
                 const element = document.getElementById(id)
                 element.classList.add('active')
-    
+              
             }
         })
     
         //toggle
-        
-        const themeBtn= document.querySelector('.theme-btn');
-        themeBtn.addEventListener('click', () =>{
-            let element = document.querySelector('.main-content')
-            element.classList.toggle('light-mode')
-            console.log("enter",element)
-        })
+        document.getElementById('change-color-btn').onclick = function() {
+            let menu = document.querySelector(".main-content")
+            menu.classList.toggle('light-mode');
+        }
+    
     })
 
     return (
@@ -471,7 +469,7 @@ function Option3(){
                     <i className="fas fa-envelope-open"></i>
                 </div>
             </div>
-            <div className="theme-btn">
+            <div className="theme-btn" id="change-color-btn">
                 <i className="fas fa-adjust"></i>
             </div>
         </div>

@@ -26,20 +26,10 @@ const paddingTest={
 
 function RouterNav() {
   useEffect(()=>{
-    console.log("jere")
-    document.getElementById('myButton').onclick = function() {
+      document.getElementById('myButton').onclick = function() {
       let menu = document.querySelector(".nav-main-items")
-      
-      menu.classList.toggle('active-navbar-main-trans');
-    }
-    /*
-    let menuButton = document.querySelector(".navbar-icon-con")
-    console.log("men", menuButton)
-    menuButton.addEventListener("click",()=>{
-      console.log("CLICK")
-      let menu = document.querySelector(".nav-main-items")
-      menu.classList.toggle('active-navbar-main-trans')
-    })*/
+        menu.classList.toggle('active-navbar-main-trans');
+      }
   })
 
   return (
