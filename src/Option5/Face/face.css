@@ -1,0 +1,30 @@
+
+.eyes{
+    fill: black;
+    animation: blink 2.4s infinite;
+}
+
+@keyframes eyesblinded {
+    from{
+        fill: yellow;
+    }
+    to{
+        fill: black;
+    }
+
+
+}
+
+@keyframes blink {
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: scaleY(0)
+    }
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
+  

@@ -9,6 +9,9 @@ import {
 
 import Option2 from '../Option2/Main'
 import Option3 from '../Option3/Option3'
+import Option4 from '../Option4/Option4'
+import {Option5} from '../Option5/Option5'
+
 
 import Main from '../Option1/Main'
 import './RouterNav.css'
@@ -52,13 +55,17 @@ function RouterNav() {
           <div className="nav-main-item">
             <Link to="kalugy-projects/v4" style={stylesVersions}>Version4</Link>
           </div>
+          <div className="nav-main-item">
+            <Link to="kalugy-projects/v5" style={stylesVersions}>Version5</Link>
+          </div>
         </nav>
       </div>
       <Routes>
         <Route path="kalugy-projects/" element={<Main/>} />
         <Route path="kalugy-projects/v2" element={<Option2 />} />
         <Route path="kalugy-projects/v3" element={<Option3/>} />
-        <Route path="kalugy-projects/v4" element={<h1 style={paddingTest}>version4</h1>} />
+        <Route path="kalugy-projects/v4" element={<Option4/>} />
+        <Route path="kalugy-projects/v5" element={<Option5/>} />
       </Routes>
     </BrowserRouter>
     </div>
