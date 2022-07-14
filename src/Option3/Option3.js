@@ -76,12 +76,13 @@ function Option3(){
                         <p>
                         I am a Computer Systems Engineering. I like to learn and develop projects. I am working on applications and challenges from software.
                         </p>
+                        {/*
                         <div className="btn-con">
                             <a href="" className="main-btn" target="_black">
                                 <span className="btn-text">Contact</span>
                                 <span className="btn-icon"><i className="fas fa-download"></i></span>
                             </a>
-                        </div>
+                        </div>*/}
                     </div>
                 </div>
             </header>
@@ -96,12 +97,6 @@ function Option3(){
                                  I am a Computer Systems Engineering. I like to learn and develop projects. I am working on applications and challenges from software.
                                  I am interested in Front ends I am improving everyday and keep learning about them as a person i am very creative, resilient, open mind, commitment and self managment.  
                                  </p>
-                                 <div className="btn-con">
-                                    <a href="https://docs.google.com/document/d/11VEBs7W4yRrRLF_yUF-Cck0_8AvYIJr9Koom2mDlPyA/edit?usp=sharing" className="main-btn" target="_black">
-                                        <span className="btn-text">Show CV</span>
-                                        <span className="btn-icon"><i className="fas fa-download"></i></span>
-                                    </a>
-                                </div>
                             </div>
                             <div className="right-about">
                                 <div className="about-item">
@@ -404,14 +399,14 @@ function Option3(){
                                                 <i className="fas fa-map-marker-alt"></i>
                                                 <span>Location</span>
                                             </div>
-                                            <p>: Latin America, Colombia</p>
+                                            <p>: Latin America</p>
                                         </div>
                                         <div className="contact-item">
                                             <div className="iconss">
                                                 <i className="fas fa-envelope"></i>
                                                 <span>Email</span>
                                             </div>
-                                            <p>: danieltrujillo901@gmail.com</p>
+                                            <p>: danieltrujillo902@gmail.com</p>
                                         </div>
                                         <div className="contact-item">
                                             <div className="iconss">
@@ -423,10 +418,8 @@ function Option3(){
                                     </div>
                                     <div className="contact-icons">
                                         <div className="contact-icon">
-                                            <a href="https://www.linkedin.com/in/julian-trujillo-92b0b8143" target="_blanck"><i className="fa-brands fa-linkedin"></i></a>
                                             <a href="https://twitter.com/KalugyDev" target="_blanck"><i className="fab fa-twitter"></i></a>
                                             <a href="https://github.com/Kalugy/kalugy-projects" target="_blanck"><i className="fab fa-github"></i></a>
-                                            <a href="https://github.com/Kalugy/kalugy-projects" target="_blanck"><i className="fab fa-youtube"></i></a>   
                                         </div>
                                     </div>
                                 </div>
