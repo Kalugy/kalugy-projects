@@ -1,0 +1,6 @@
+.v5-footer{
+    background-color: var(--color-primary-v5);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: solid 3px black;
+}

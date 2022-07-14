@@ -1,0 +1,21 @@
+.button-general{
+    background-color: bisque;
+    border-radius: 10%;
+    position: absolute;
+    top: 90%;
+
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    z-index: 100;
+}
+
+
+.button-general:hover{
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px grey;
+    color: rgb(53, 53, 56);
+
+}

@@ -1,0 +1,75 @@
+.name-kal{
+    background-color: var(--color-primary-v5);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;    
+    border-bottom: 3px;
+    border: solid 3px black;
+}
+
+
+.name-kal path:nth-child(1){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards .3s; 
+}
+.name-kal path:nth-child(2){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards .6s;
+}
+.name-kal path:nth-child(3){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards .9s;
+}
+.name-kal path:nth-child(4){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards 1.2s;
+}
+.name-kal path:nth-child(5){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards 1.5s;
+}
+.name-kal path:nth-child(6){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards 1.7s;
+}
+.name-kal path:nth-child(7){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards 2s;
+}
+.name-kal path:nth-child(8){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards 2.3s;
+}
+.name-kal path:nth-child(9){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: nameDisapper 2s ease forwards 2.6s;
+}
+
+.name-kal svg{
+    animation: namecolor .5s ease forwards 2.8s 
+}
+
+@keyframes namecolor {
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+@keyframes nameDisapper {
+    to{
+        stroke-dashoffset: 0px;
+    }
+}

@@ -1,4 +1,3 @@
-import './Main.css';
 import Background from '../background-op.png';
 import Photo from '../Photo.jpg';
 
@@ -6,13 +5,13 @@ import Photo from '../Photo.jpg';
 function Main() {
     return (
       <div className='main-section'>
-         <img src={Background} className="responsive-image" alt="background"/>
          <section>
-            <img src={Photo} className="profile-pick" alt="profile"/>
+            <img src={Photo} className="profile-pick" alt="profile" width="200px"/>
             <div className="overlay">
               <h1>Julian Trujillo</h1>
             </div>
           </section>
+          <hr/>
           <section>
             <div className='overlay2'>
               <h1>Software Developer</h1>
