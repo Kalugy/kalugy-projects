@@ -2,11 +2,13 @@ import Background from '../background-op.png';
 import Photo from '../Photo.jpg';
 import {StackButtom} from "../StackButtom/StackButton"
 
+import data from './Content.json';
+
 function Main() {
     return (
       <div className='main-section'>
          
-        <StackButtom/>
+        <StackButtom content={data}/>
          <section>
             <img src={Photo} className="profile-pick" alt="profile" width="200px"/>
             <div className="overlay">

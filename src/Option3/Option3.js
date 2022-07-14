@@ -6,6 +6,7 @@ import Portfolio from '../portfolio.PNG';
 import { StackButtom } from "../StackButtom/StackButton";
 
 import { useEffect } from "react";
+import data from "./Content.json"
 
 function Option3(){
     
@@ -57,7 +58,7 @@ function Option3(){
     return (
         <div className="main-div main-content" id="test">
             
-            {/*<StackButtom/>*/}
+            <StackButtom content={data}/>
             <header className="option3-header section sec1 header active" id="home">
                 <div className="header-content">
                     <div className="left-header">
@@ -76,8 +77,8 @@ function Option3(){
                         I am a Computer Systems Engineering. I like to learn and develop projects. I am working on applications and challenges from software.
                         </p>
                         <div className="btn-con">
-                            <a href="https://docs.google.com/document/d/11VEBs7W4yRrRLF_yUF-Cck0_8AvYIJr9Koom2mDlPyA/edit?usp=sharing" className="main-btn" target="_black">
-                                <span className="btn-text">Show CV</span>
+                            <a href="" className="main-btn" target="_black">
+                                <span className="btn-text">Contact</span>
                                 <span className="btn-icon"><i className="fas fa-download"></i></span>
                             </a>
                         </div>

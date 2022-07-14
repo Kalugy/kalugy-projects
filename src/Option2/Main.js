@@ -3,10 +3,13 @@ import Background from '../background-op.png';
 import Photo from '../Photo.jpg';
 import './Animation.css'
 import {StackButtom} from "../StackButtom/StackButton"
+
+import data from './Content.json';
+
 function Main() {
     return (
       <div className='main-section2'>
-         {/*<StackButtom/>*/}
+         <StackButtom content={data}/>
          <div className='animate-circle'></div>
          <div className='animate-background'></div>
          <div className='animate-background2'></div>

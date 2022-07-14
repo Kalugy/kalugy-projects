@@ -1,6 +1,6 @@
 import "./StackButtom.css"
 
-export const StackButtom = () => {
+export const StackButtom = ({content}) => {
     function handleClick(){
         const popUp=document.querySelector('.pop-up-general')
         popUp.classList.remove('desactive-pop-up-g')
@@ -14,19 +14,17 @@ export const StackButtom = () => {
     function handleLearnMore(){
         alert("In process...")
     }
+    
     return(
     <>
         <div className="button-general-vall" onClick={handleClick}>
-            <span>How was build?
+            <span>{content.buttom}
             </span>            
         </div>        
         <div className="pop-up-general desactive-pop-up-g">
-            <h2>Welcome to Html <a className="close-pop-up-g" onClick={handleClosePopUp}>X</a></h2>
-            <h4>(HyperText Markup Language)</h4>
-            <p> Most basic what you can build on web is
-                Html tags. It declares basic structure on 
-                content with the information which want to be display in this case a portfolio example.
-            </p>
+            <h2>{content.title} <a className="close-pop-up-g" onClick={handleClosePopUp}>X</a></h2>
+            <h4>{content.subtitle}</h4>
+            <p> {content.text}</p>
             <div className="content-link-g">
                 <a href="" onClick={handleLearnMore}>Want lo Learn More?</a>
             </div>
