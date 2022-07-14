@@ -3,6 +3,7 @@ import Photo from '../Photo.jpg';
 import Three from '../threepic.PNG';
 import Firechat from '../firechat.PNG';
 import Portfolio from '../portfolio.PNG';
+import { StackButtom } from "../StackButtom/StackButton";
 
 import { useEffect } from "react";
 
@@ -55,6 +56,8 @@ function Option3(){
 
     return (
         <div className="main-div main-content" id="test">
+            
+            {/*<StackButtom/>*/}
             <header className="option3-header section sec1 header active" id="home">
                 <div className="header-content">
                     <div className="left-header">

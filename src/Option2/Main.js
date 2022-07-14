@@ -2,10 +2,11 @@ import './Main.css';
 import Background from '../background-op.png';
 import Photo from '../Photo.jpg';
 import './Animation.css'
-
+import {StackButtom} from "../StackButtom/StackButton"
 function Main() {
     return (
       <div className='main-section2'>
+         {/*<StackButtom/>*/}
          <div className='animate-circle'></div>
          <div className='animate-background'></div>
          <div className='animate-background2'></div>
@@ -74,7 +75,7 @@ function Main() {
               </p>
               <h1 className='title-option2'>Projects</h1>
               <ul className='list-examples'>
-                <li>Three.js Cube Rubik</li>
+                <li className='line-1 anim-typewriter'>Three.js Cube Rubik</li>
                 <li>Angular FireChat</li>
                 <li>Blog Example React</li>
                 <li>IA - TIC TAC TOE</li>

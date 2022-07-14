@@ -53,7 +53,7 @@
     padding-left: 1.5rem;
 }
 
-@media (max-width:900px){
+@media (max-width:1100px){
     .main-section2 .overlay{
         top: 7%;
         left: 45%;
@@ -88,3 +88,27 @@
     }
     
 }
+
+.line-1{
+    position: relative;
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 1.2rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }

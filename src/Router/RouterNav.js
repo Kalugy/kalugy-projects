@@ -37,7 +37,6 @@ function RouterNav() {
 
   return (
     <> 
-    <StackButtom/>
     <BrowserRouter>
     
       <div className="menu-navbar-main">
@@ -46,19 +45,22 @@ function RouterNav() {
         </div>
         <nav className="nav-main-items">
           <div className="nav-main-item">
-            <Link to="kalugy-projects/" style={stylesVersions}>HTML</Link>
+            <Link to="kalugy-projects/" style={stylesVersions}>Html</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v2" style={stylesVersions}>HTML-CSS</Link>
+            <Link to="kalugy-projects/v2" style={stylesVersions}>Html-Css</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v3" style={stylesVersions}>HTML-CSS-Js</Link>
+            <Link to="kalugy-projects/v3" style={stylesVersions}>Html-Scss-Js</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v4" style={stylesVersions}>React</Link>
+            <Link to="kalugy-projects/v5" style={stylesVersions}>VanillaJs(Process)</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v5" style={stylesVersions}>VanillaJs</Link>
+            <Link to="kalugy-projects/v4" style={stylesVersions}>React(Process)</Link>
+          </div>
+          <div className="nav-main-item">
+            <Link to="kalugy-projects/v6" style={stylesVersions}>3D(Process)</Link>
           </div>
         </nav>
       </div>

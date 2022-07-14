@@ -1,10 +1,12 @@
 import Background from '../background-op.png';
 import Photo from '../Photo.jpg';
-
+import {StackButtom} from "../StackButtom/StackButton"
 
 function Main() {
     return (
       <div className='main-section'>
+         
+        <StackButtom/>
          <section>
             <img src={Photo} className="profile-pick" alt="profile" width="200px"/>
             <div className="overlay">

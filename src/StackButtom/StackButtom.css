@@ -1,9 +1,11 @@
-.button-general{
+.button-general-vall{
+    
     background-color: bisque;
     border-radius: 10%;
     position: absolute;
     top: 90%;
-
+    left: .5%;
+    color: black;
     padding: 1.2rem;
     font-size: 1.2rem;
     font-weight: 700;
@@ -13,9 +15,83 @@
 }
 
 
-.button-general:hover{
+.button-general-vall:hover{
     background-color: blanchedalmond;
     box-shadow: 2px 2px grey;
     color: rgb(53, 53, 56);
 
+}
+
+
+
+.pop-up-general{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: aquamarine;
+    border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem 1rem;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.desactive-pop-up-g{
+    display: none !important;
+}
+.active-pop-up-g{
+    display: block;
+    animation: scaleAnim2 1s ease-in-out;
+}
+
+@keyframes scaleAnim2 {
+    0%{
+        transform: translateX(-200%) translateY(-100%) scaleY(0) ;
+    }
+    100%{
+        transform: translateX(-50%) translateY(-50%) scaleY(1) ;
+    }
+}
+
+.pop-up-general .close-pop-up-g{
+    justify-content: end;
+    align-items: end;
+    align-content: end;
+    justify-items: end;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: .3rem .5rem;
+    border: 1px solid grey;
+    float: right;
+    border-radius: 30%;
+    background-color: rgb(17, 247, 166);
+}
+
+.pop-up-general h2{
+    font-size: 2rem;
+}
+.pop-up-general h4{
+    font-size: 1.2rem;
+    padding: .3rem .2rem;
+    border-bottom: 1px solid black;
+
+}
+
+.pop-up-general p{
+    padding: 1rem .7rem ;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.pop-up-general .content-link-g{
+    padding: .4rem .5rem;
+}
+
+.pop-up-general div a{
+    float: right;
 }
