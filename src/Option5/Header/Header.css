@@ -1,61 +1,66 @@
-.name-kal{
+.header-v5 nav ul{
     background-color: var(--color-primary-v5);
+    color: var(--color-black-v5);
     display: grid;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;    
-    border-bottom: 3px;
-    border: solid 3px black;
+    grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
+    padding-top: 2rem;
+}
+
+.header-v5 nav ul li{
+    font-family: var(--font-v5);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 
-.name-kal path:nth-child(1){
+.header-v5 path:nth-child(1){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards .3s; 
 }
-.name-kal path:nth-child(2){
+.header-v5 path:nth-child(2){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards .6s;
 }
-.name-kal path:nth-child(3){
+.header-v5 path:nth-child(3){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards .9s;
 }
-.name-kal path:nth-child(4){
+.header-v5 path:nth-child(4){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards 1.2s;
 }
-.name-kal path:nth-child(5){
+.header-v5 path:nth-child(5){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards 1.5s;
 }
-.name-kal path:nth-child(6){
+.header-v5 path:nth-child(6){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards 1.7s;
 }
-.name-kal path:nth-child(7){
+.header-v5 path:nth-child(7){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards 2s;
 }
-.name-kal path:nth-child(8){
+.header-v5 path:nth-child(8){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards 2.3s;
 }
-.name-kal path:nth-child(9){
+.header-v5 path:nth-child(9){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
     animation: nameDisapper 2s ease forwards 2.6s;
 }
 
-.name-kal svg{
+.header-v5 svg{
     animation: namecolor .5s ease forwards 2.8s 
 }
 
@@ -64,7 +69,7 @@
         fill: transparent;
     }
     to{
-        fill: white;
+        fill: #1290EC;
     }
 }
 

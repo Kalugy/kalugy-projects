@@ -1,7 +1,7 @@
 
 :root {
-    --color-primary-v5: #191d2b;
-    --color-secondary-v5: #27AE60;
+    --color-primary-v5: #f3f3f3;
+    --color-secondary-v5: #191d2b;
     --color-white-v5: #FFFFFF;
     --color-black-v5: #000;
     --color-grey0-v5: #f8f8f8;
@@ -13,4 +13,5 @@
     --color-grey-6-v5: #12181b;
     --br-sm-2-v5: 14px;
     --box-shadow-1-v5: 0 3px 15px rgba(0,0,0.2);
+    --font-v5:'Segoe UI', Tahoma, "Geneva", "Verdana", "sans-serif";
 }
