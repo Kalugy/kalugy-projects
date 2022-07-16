@@ -13,6 +13,7 @@ export const StackButtom = ({content}) => {
     } 
     function handleLearnMore(){
         alert("In process...")
+        return false
     }
     
     return(

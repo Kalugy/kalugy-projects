@@ -50,9 +50,37 @@
     font-weight: 700;
 }
 
+.nav-main-items .nav-main-item .a-link-nav-s{
+    
+    color: white;
+}
+
 @media screen and (max-width:1200px) {
     
+    .nav-main-items {
+        flex-direction: column;
+    }
     .nav-main-items .nav-main-item{
-        padding: .5rem .4rem;
+        
+        
+        background-color: black;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .nav-main-items .nav-main-item .a-link-nav-s{
+        font-weight: 600;
+        font-size: 1rem;
+        display: inline-block;
+        width: 100%;
+        color: white;
+        cursor: pointer;
+        padding: .8rem .9rem;
+    }
+
+    
+    .active-navbar-main-trans{
+        transform: translateY(-800px);
+        transition: all .16s ease-in-out;
     }
 }

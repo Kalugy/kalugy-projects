@@ -20,7 +20,6 @@ const stylesVersions={
   color:"white",
   fontSize:"1rem",
   fontWeight:"600"
-
 }
 
 const paddingTest={
@@ -45,22 +44,22 @@ function RouterNav() {
         </div>
         <nav className="nav-main-items">
           <div className="nav-main-item">
-            <Link to="kalugy-projects/" style={stylesVersions}>Html</Link>
+            <Link to="kalugy-projects/" className="a-link-nav-s">Html</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v2" style={stylesVersions}>Html-Css</Link>
+            <Link to="kalugy-projects/v2" className="a-link-nav-s">Html-Css</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v3" style={stylesVersions}>Html-Scss-Js</Link>
+            <Link to="kalugy-projects/v3" className="a-link-nav-s">Html-Scss-Js</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v5" style={stylesVersions}>VanillaJs(Process)</Link>
+            <Link to="kalugy-projects/v5" className="a-link-nav-s">VanillaJs(Process)</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v4" style={stylesVersions}>React(Process)</Link>
+            <Link to="kalugy-projects/v4" className="a-link-nav-s">React(Process)</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v6" style={stylesVersions}>3D(Process)</Link>
+            <Link to="kalugy-projects/v6" className="a-link-nav-s">3D(Process)</Link>
           </div>
         </nav>
       </div>
