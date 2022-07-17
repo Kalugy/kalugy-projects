@@ -1,7 +1,12 @@
 import "./Header.css"
+import {Router} from "../Router/router"
+import {PATHS} from "../Router/routes"
 
-export const Header=()=>(
-    <header className="header-v5">
+export const Header=()=>{
+    let Routerr = new Router(PATHS);
+    
+    return <header className="header-v5">
+            
             <nav>
                 <ul>
                     <li>
@@ -17,8 +22,8 @@ export const Header=()=>(
                             <path d="M474.227 19.4545L454.864 71.8182H446.682L427.318 19.4545H436.045L450.5 61.1818H451.045L465.5 19.4545H474.227Z" stroke="#1290EC" strokeWidth="4" mask="url(#path-1-outside-1_7_3)"/>
                         </svg>
                     </li>
-                    <li>Learning</li>
-                    <li>Projects</li>
+                    <li> <button onClick={function(){Routerr.load('about')}} className="linkk">Learning</button></li>
+                    <li> <button onClick={function(){Routerr.load('contact')}} className="linkk">Projects </button></li>
                     <li>Contact</li>
                     <li>Light <i className="fa-solid "></i></li>
                 </ul>
@@ -28,4 +33,4 @@ export const Header=()=>(
             */}
             {/*<Data/>*/}
     </header>
-);
+}

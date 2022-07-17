@@ -40,6 +40,8 @@ export const Content=()=>{
     return(
    <>
     <main className="main-div-v5">
+            
+    <div id="content"></div>
             <div className="content-v5">
                 <div className="main-content-header-v5">
                     <img src={Photo} alt="profile"/>    
@@ -49,7 +51,8 @@ export const Content=()=>{
                 </div>  
                 <div className="starv5-grid">
                 </div>
-            </div>      
+            </div>    
+            
     </main>
     {/*
     <main className="version5">

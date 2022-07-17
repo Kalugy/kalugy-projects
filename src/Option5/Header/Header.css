@@ -1,3 +1,7 @@
+.linkk{
+    cursor: pointer;
+}
+
 .header-v5 nav ul{
     background-color: var(--color-primary-v5);
     color: var(--color-black-v5);
