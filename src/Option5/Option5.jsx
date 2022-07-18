@@ -8,11 +8,11 @@ import { Content } from "./Content/Content";
 import { Footer } from "./Footer/Footer";
 
 export const Option5= () => (
-    <>
+    <div className="page-v5-main">
         <Header/>
         <Content/>
         <Footer/>
-    </>
+    </div>
 );
 /*
 const width=100;

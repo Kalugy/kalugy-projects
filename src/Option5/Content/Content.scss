@@ -67,14 +67,18 @@
 
 
 .main-div-v5{
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-    
+    background-color: var(--color-primary-v5);
+    h1{
+        color: var(--color-black-v5);
+    }
 }
 
 
+
 .content-v5{
-    height: 100%;
+    height: 90%;
     width: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     position: absolute;

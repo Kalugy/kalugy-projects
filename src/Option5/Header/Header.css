@@ -1,5 +1,12 @@
-.linkk{
+.link-v5-header{
     cursor: pointer;
+    border-left: .5px solid var(--color-grey-5-v5);
+    border-right: .5px solid var(--color-grey-5-v5);
+    font-weight: 700;
+}
+
+.link-v5-header:hover{
+    background-color: var(--color-thrid-v5);
 }
 
 .header-v5 nav ul{

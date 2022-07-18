@@ -1,15 +1,26 @@
 import "./Header.css"
 import {Router} from "../Router/router"
 import {PATHS} from "../Router/routes"
+import { useEffect } from "react";
 
 export const Header=()=>{
     let Routerr = new Router(PATHS);
-    
+    useEffect(()=>{
+        Routerr.load('home')
+    },[])
+
+    function colorChange(){
+        //toggle
+        let menu = document.querySelector(".page-v5-main")
+        menu.classList.toggle('light-mode-v5');
+        
+    }
+
     return <header className="header-v5">
             
             <nav>
                 <ul>
-                    <li>
+                    <li onClick={function(){Routerr.load('home')}} className="link-v5-header">
                         <svg width="100" height="25" viewBox="0 0 478 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 71.8182V2H10.4545V36.6364H11.2727L42.6364 2H53.6818L24.3636 33.5L53.6818 71.8182H43.4545L19.1818 39.3636L10.4545 49.1818V71.8182H2Z" stroke="#1290EC" strokeWidth="4" mask="url(#path-1-outside-1_7_3)"/>
                             <path d="M78.9432 73.0455C75.625 73.0455 72.6136 72.4205 69.9091 71.1705C67.2046 69.8977 65.0568 68.0682 63.4659 65.6818C61.875 63.2727 61.0795 60.3636 61.0795 56.9545C61.0795 53.9545 61.6705 51.5227 62.8523 49.6591C64.0341 47.7727 65.6136 46.2955 67.5909 45.2273C69.5682 44.1591 71.75 43.3636 74.1364 42.8409C76.5455 42.2955 78.9659 41.8636 81.3977 41.5455C84.5795 41.1364 87.1591 40.8295 89.1364 40.625C91.1364 40.3977 92.5909 40.0227 93.5 39.5C94.4318 38.9773 94.8977 38.0682 94.8977 36.7727V36.5C94.8977 33.1364 93.9773 30.5227 92.1364 28.6591C90.3182 26.7955 87.5568 25.8636 83.8523 25.8636C80.0114 25.8636 77 26.7045 74.8182 28.3864C72.6364 30.0682 71.1023 31.8636 70.2159 33.7727L62.5795 31.0455C63.9432 27.8636 65.7614 25.3864 68.0341 23.6136C70.3296 21.8182 72.8296 20.5682 75.5341 19.8636C78.2614 19.1364 80.9432 18.7727 83.5795 18.7727C85.2614 18.7727 87.1932 18.9773 89.375 19.3864C91.5795 19.7727 93.7045 20.5795 95.75 21.8068C97.8182 23.0341 99.5341 24.8864 100.898 27.3636C102.261 29.8409 102.943 33.1591 102.943 37.3182V71.8182H94.8977V64.7273H94.4886C93.9432 65.8636 93.0341 67.0795 91.7614 68.375C90.4886 69.6705 88.7955 70.7727 86.6818 71.6818C84.5682 72.5909 81.9886 73.0455 78.9432 73.0455ZM80.1705 65.8182C83.3523 65.8182 86.0341 65.1932 88.2159 63.9432C90.4205 62.6932 92.0795 61.0795 93.1932 59.1023C94.3295 57.125 94.8977 55.0455 94.8977 52.8636V45.5C94.5568 45.9091 93.8068 46.2841 92.6477 46.625C91.5114 46.9432 90.1932 47.2273 88.6932 47.4773C87.2159 47.7045 85.7727 47.9091 84.3636 48.0909C82.9773 48.25 81.8523 48.3864 80.9886 48.5C78.8977 48.7727 76.9432 49.2159 75.125 49.8295C73.3295 50.4205 71.875 51.3182 70.7614 52.5227C69.6705 53.7045 69.125 55.3182 69.125 57.3636C69.125 60.1591 70.1591 62.2727 72.2273 63.7045C74.3182 65.1136 76.9659 65.8182 80.1705 65.8182Z" stroke="#1290EC" strokeWidth="4" mask="url(#path-1-outside-1_7_3)"/>
@@ -22,10 +33,10 @@ export const Header=()=>{
                             <path d="M474.227 19.4545L454.864 71.8182H446.682L427.318 19.4545H436.045L450.5 61.1818H451.045L465.5 19.4545H474.227Z" stroke="#1290EC" strokeWidth="4" mask="url(#path-1-outside-1_7_3)"/>
                         </svg>
                     </li>
-                    <li> <button onClick={function(){Routerr.load('about')}} className="linkk">Learning</button></li>
-                    <li> <button onClick={function(){Routerr.load('contact')}} className="linkk">Projects </button></li>
-                    <li>Contact</li>
-                    <li>Light <i className="fa-solid "></i></li>
+                    <li onClick={function(){Routerr.load('about')}} className="link-v5-header">About</li>
+                    <li onClick={function(){Routerr.load('projects')}} className="link-v5-header">Projects </li>
+                    <li onClick={function(){Routerr.load('contact')}} className="link-v5-header">Contact</li>
+                    <li onClick={function(){colorChange()}} className="link-v5-header">Light <i className="fas fa-adjust"></i></li>
                 </ul>
             </nav>
             {/*

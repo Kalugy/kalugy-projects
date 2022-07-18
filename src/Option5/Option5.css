@@ -2,6 +2,7 @@
 :root {
     --color-primary-v5: #f3f3f3;
     --color-secondary-v5: #191d2b;
+    --color-thrid-v5: rgb(150, 190, 232);
     --color-white-v5: #FFFFFF;
     --color-black-v5: #000;
     --color-grey0-v5: #f8f8f8;
@@ -11,6 +12,23 @@
     --color-grey-4-v5: #454e56;
     --color-grey-5-v5: #2a2e35;
     --color-grey-6-v5: #12181b;
+    --br-sm-2-v5: 14px;
+    --box-shadow-1-v5: 0 3px 15px rgba(0,0,0.2);
+    --font-v5:'Segoe UI', Tahoma, "Geneva", "Verdana", "sans-serif";
+}
+
+.light-mode-v5{
+    --color-primary-v5:   #191d2b;  
+    --color-secondary-v5: #f3f3f3;
+    --color-white-v5: #000;
+    --color-black-v5: #FFFFFF;
+    --color-grey0-v5: #12181b;
+    --color-grey-1-v5: #12181b;
+    --color-grey-2-v5: #2a2e35;
+    --color-grey-3-v5: #6c7983;
+    --color-grey-4-v5: #454e56;
+    --color-grey-5-v5: #2a2e35;
+    --color-grey-6-v5: #dbe1e8;
     --br-sm-2-v5: 14px;
     --box-shadow-1-v5: 0 3px 15px rgba(0,0,0.2);
     --font-v5:'Segoe UI', Tahoma, "Geneva", "Verdana", "sans-serif";
