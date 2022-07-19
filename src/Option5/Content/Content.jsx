@@ -9,10 +9,8 @@ import { useEffect } from "react";
 export const Content=()=>{
     return(
    <>
-    <div className="main-div-v5">
-            <div id="content-v5">
-                
-            </div>
-    </div>
+    <main className="main-div-v5">
+            
+    </main>
     </>)
 };

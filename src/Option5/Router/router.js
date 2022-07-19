@@ -10,7 +10,7 @@ export class Router {
         
         const { paths } = this;
         const { path, template } = paths[page] || paths.error;
-        const container = document.querySelector("#content-v5");
+        const container = document.querySelector(".main-div-v5");
         container.innerHTML = template;
         window.history.pushState({}, "", path);
         if(page=='home'){
