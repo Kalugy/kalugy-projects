@@ -15,14 +15,14 @@
     color: var(--color-black-v5);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
-    padding-top: 2rem;
+    
 }
 
 .header-v5 nav ul li{
     font-family: var(--font-v5);
     font-weight: 700;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 

@@ -26,3 +26,94 @@ layout seems like a progress i want ot learn more about css and grid and make so
 **Link(s) to work**
 1. [Figma Icon](https://www.youtube.com/watch?v=B_KeOTlDdSQ)
 2. [Some inspiration](https://www.cassie.codes/)
+
+
+
+### Day 3: June 20, 2022
+##### (project section)
+
+**Today's Progress**: Learning about grid and flex-box autosizing on decreasing window and the differences. Also, I watched interviews with CSS and react for learning how are challenges on the front end 🌂
+
+**Thoughts** 
+flex and grid are for templates and layout
+i think they have a lot function that you have to memorize, so i need something to memorize the principal tools of both and learn each case and where to use it.
+for example. flex-shrink where to use it what parameters received.
+
+
+
+**css box model**
+margin border padding content
+**css grid vs flex**
+grid is better as 2d and have more control, flex one row or column and not very good to control
+**css flex properties**
+flex gap
+flex grown
+**React replicate wordle game**
+react use effect, use state
+handle event every 5
+**Salaries**
+
+**Link(s) to work**
+1. [React Code Interview](https://www.youtube.com/watch?v=5xf4_Kx7azg)
+2. [CSS Code Interview](https://www.youtube.com/watch?v=ak4p7sdKJQw)
+3. [Salaries on meta](https://www.youtube.com/watch?v=RcXTmVOiBMg)
+
+
+### Day 4: June 21, 2022
+##### (Main layout For all pages)
+
+**Today's Progress**: 
+Fix all bugs fix main layout on pc
+Learning about grid and flex understand justify and align content and items
+
+
+Justify item
+justify items on a row
+******center********
+align items on colum oposite to up
+******************
+****center********
+******************
+place-items set both justify and align item
+
+justify content
+based on the grid container fix on the container
+*******************
+start start *******
+*******************
+alisgn item on left
+space-between
+space-around 
+space evenly
+strech
+center
+start
+end
+align content same but on the column
+
+
+principal diference:
+Items- align All items inside the grid and each item to left
+"""""""""""""
+"*   "*     "
+"""""""""""""
+"*   "*     "
+"""""""""""""
+
+Contain- align All item to left or right based of parent grid
+"""""""""""""
+"*"*"       "
+"""""""""""""
+"*"*"       "
+"""""""""""""
+
+
+**Thoughts** 
+need to practice more in the proyect with simple examples
+so the person who saw the project can learn the diference more easy and with real examples
+
+
+**Link(s) to work**
+1. [Css Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+

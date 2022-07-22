@@ -7,23 +7,16 @@ export const PATHS = {
     home: {
         path: "/kalugy-projects/v5",
         template: `
-        
             <div class="content-v5">
-                <div class="main-content-header-v5">
-                    <img src=${src2} alt="profile"/>    
-                    <p>
-                    I am a Computer Systems Engineering. I like to learn and develop projects. I am working on applications and challenges from software.
-                    </p> 
-                </div>  
-                <div class="starv5-grid">
-                </div>
+                <img src=${src2} alt="profile"/>
+                <div class="starv5-grid"></div>
             </div>
         `,
     },
-    projects: {
-        path: "/kalugy-projects/v5/projects",
+    blog: {
+        path: "/kalugy-projects/v5/blog",
         template: `
-            <h1>About me</h1>
+            <h1>Blogs</h1>
             <main class="version5">
             <section class="secc1">
                 <ul class="menu">
@@ -115,12 +108,71 @@ export const PATHS = {
             </main>
         `,
     },
-    contact: {
-        path: "/kalugy-projects/v5/contact",
+    project: {
+        path: "/kalugy-projects/v5/project",
         template: 
         `
-            <h1>Contact</h1>
-            <p></p>
+            <main class="main-content-project-v5">
+                <h1>Projects</h1>
+                <h3>Flex auto sizing</h3>
+                <div class="cards-projects-v5">
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+
+                        <p>dsadasdasdsadddddddddddddddddddddsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdaddddddddddddddddsdsadsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdddddddddddasdsadsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdddddddddddasdsadsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdddddddddddasdsadsada</p>
+                    </div>
+                </div>
+                <h3>Grid auto sizing</h3>
+                <div class="cards-projects2-v5">
+                    
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+
+                        <p>dsadasdasdsadddddddddddddddddddddsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdaddddddddddddddddsdsadsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdddddddddddasdsadsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdddddddddddasdsadsada</p>
+                    </div>
+                    <div class="card-v5">
+                        <h4>Project1</h4>
+                        
+                        <p>dsadasdddddddddddasdsadsada</p>
+                    </div>
+                </div>
+                
+            </main>
         `,
     }
 }

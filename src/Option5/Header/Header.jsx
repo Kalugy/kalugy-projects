@@ -13,11 +13,9 @@ export const Header=()=>{
         //toggle
         let menu = document.querySelector(".page-v5-main")
         menu.classList.toggle('light-mode-v5');
-        
     }
 
     return <header className="header-v5">
-            
             <nav>
                 <ul>
                     <li onClick={function(){Routerr.load('home')}} className="link-v5-header">
@@ -34,8 +32,8 @@ export const Header=()=>{
                         </svg>
                     </li>
                     <li onClick={function(){Routerr.load('about')}} className="link-v5-header">About</li>
-                    <li onClick={function(){Routerr.load('projects')}} className="link-v5-header">Projects </li>
-                    <li onClick={function(){Routerr.load('contact')}} className="link-v5-header">Contact</li>
+                    <li onClick={function(){Routerr.load('blog')}} className="link-v5-header">Blogs</li>
+                    <li onClick={function(){Routerr.load('project')}} className="link-v5-header">Projects</li>
                     <li onClick={function(){colorChange()}} className="link-v5-header">Light <i className="fas fa-adjust"></i></li>
                 </ul>
             </nav>

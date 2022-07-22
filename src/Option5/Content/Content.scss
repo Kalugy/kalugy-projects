@@ -1,4 +1,116 @@
 
+
+//Main div
+.main-div-v5{
+    display: flex;
+    min-height: 90vh;
+    background-color: var(--color-primary-v5);
+    h1{
+        color: var(--color-black-v5);
+    }
+}
+
+//Main
+.content-v5{
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    img{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        animation: crawl 6s ease-in-out;    
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    img:hover{
+        border: 5px;
+    }
+    .starv5-grid{
+        position: relative;
+        height: 100%;
+        width: 100%;    
+        .star-v5{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(236, 235, 235);
+            position: absolute;
+            animation: starLight 15s infinite linear;    
+            
+            /*box-shadow: 1px 1px 10px 10px rgb(188, 188, 188);*/
+        }
+    }
+}
+
+@keyframes starLight {
+    from{
+        background-color: rgb(211, 209, 209);
+        transform: translate(50px);
+    }
+    to{
+        background-color: rgb(236, 235, 235);
+        transform: translate(0);
+    }
+}
+
+@keyframes crawl {
+	0% {
+    opacity: 0;
+    transform: rotate(180deg) translateY(0%)  translateZ(0) scale(0);
+  }
+  100% { 
+    opacity: 1;
+    transform: rotate(0deg) translateX(-50%)  translateZ(0) scale(1);
+  }
+}
+
+
+//ABOUT
+
+.about-main-content-v5{
+    //height: 100%;
+    .title-about{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-black-v5);
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--color-grey-5-v5);
+    }
+    .about-content-v5{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        justify-content: center;
+        justify-items: center;
+        div{
+            padding: 4rem 2rem;
+            
+            color: var(--color-black-v5);
+            h1{
+                padding: .1rem 0;
+                text-align: center;
+            }
+            h4{
+                text-align: center;
+                
+            }
+            p{
+                padding: 1.5rem 1rem;
+            }
+        }
+        svg{
+            padding: 0 0;
+            width: 600px;
+            height: 500px;    
+        }
+    }
+}
+
+//Blogs
+
 .version5{
     display: grid;
     grid-template-columns: 2fr 5fr 3fr;
@@ -66,133 +178,39 @@
 }
 
 
-.main-div-v5{
-    height: 90vh;
-    width: 100vw;
-    background-color: var(--color-primary-v5);
+//Project
+.main-content-project-v5{
+    display: flex;
+    flex-direction: column;
     h1{
-        color: var(--color-black-v5);
-    }
-}
-
-
-
-.content-v5{
-    height: 90%;
-    width: 100%;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
-    position: absolute;
-
-    .main-content-header-v5{
-        //position:absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        animation: crawl 6s ease-in-out;
-        
-        img{
-            
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-        p{
-            color: white;
-            font-weight: 500;
-            font-family: 'lato';
-            font-size: 2rem;
-            text-align: center;
-            background: -webkit-linear-gradient(white, #8e98a2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-    
-    .starv5-grid{
-        position: relative;
-        height: 100%;
-        width: 100%;    
-        .star-v5{
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: rgb(236, 235, 235);
-            position: absolute;
-            animation: starLight 15s infinite linear;    
-            
-            /*box-shadow: 1px 1px 10px 10px rgb(188, 188, 188);*/
-        }
-    }
-}
-
-@keyframes starLight {
-    from{
-        background-color: rgb(211, 209, 209);
-        transform: translate(50px);
-    }
-    to{
-        background-color: rgb(236, 235, 235);
-        transform: translate(0);
-    }
-}
-
-@keyframes crawl {
-	0% {
-    opacity: 0;
-    transform: rotate(180deg) translateY(0%)  translateZ(0) scale(0);
-  }
-  100% { 
-    opacity: 1;
-    transform: rotate(0deg) translateX(-50%)  translateZ(0) scale(1);
-  }
-}
-
-
-//ABOUT
-
-.about-main-content-v5{
-    height: 100%;
-    .title-about{
         text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--color-black-v5);
-        padding: 1rem 0;
-        border-bottom: 1px solid var(--color-grey-5-v5);
+        padding: 1rem;
+        border-bottom: 1px solid black;
     }
-    .about-content-v5{
-        display: grid;
-        grid-template-columns: repeat(2 ,1fr);
+    .cards-projects-v5{
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px ;
+        margin: 1rem 4rem;
         justify-content: center;
-        justify-items: center;
-        div{
-            padding: 4rem 2rem;
+        .card-v5{
+            padding: 1rem;
+            background-color: lightblue;
             
-            color: var(--color-black-v5);
-            h1{
-                padding: .1rem 0;
-                text-align: center;
-            }
-            h4{
-                text-align: center;
-                
-            }
-            p{
-                padding: 1.5rem 1rem;
-            }
         }
-        svg{
-            padding: 0 0;
-            width: 600px;
-            height: 500px;    
+    }
+    .cards-projects2-v5{
+        margin: 1rem 4rem;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill,390px);
+        .card-v5{
+            padding: 1rem;
+            background-color: lightblue;
         }
     }
 }
-
 
 
