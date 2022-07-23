@@ -1,3 +1,4 @@
+import {blogsite} from "../Content/Pages/Blog"
 export class Router {
     constructor(paths) {
         this.paths = paths;
@@ -14,8 +15,10 @@ export class Router {
         container.innerHTML = template;
         window.history.pushState({}, "", path);
         if(page=='home'){
-            console.log("hehe",page)
             stars()
+        }
+        if(page=='blog'){
+            blogsite()
         }
     }
 }
@@ -45,4 +48,3 @@ function stars(){
         create.appendChild(star)
     }
 }
-

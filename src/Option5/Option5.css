@@ -33,3 +33,9 @@
     --box-shadow-1-v5: 0 3px 15px rgba(0,0,0.2);
     --font-v5:'Segoe UI', Tahoma, "Geneva", "Verdana", "sans-serif";
 }
+
+.page-v5-main{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}

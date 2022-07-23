@@ -117,3 +117,17 @@ so the person who saw the project can learn the diference more easy and with rea
 1. [Css Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 
+### Day 5: June 19, 2022
+##### (Blog section)
+
+**Today's Progress**: Finish sub routing with Vanillajs, the first blog is Rock paper scissors with js. Also, learn about macro and micro layouts from web dev
+adding breakout
+
+**Thoughts** just fixing errors and integrate the vanillajs router
+
+
+**Link(s) to work**
+1. [Macrolayout- microlayout](https://web.dev/learn/design/micro-layouts/)
+2. [Append vs append Child](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
+
+

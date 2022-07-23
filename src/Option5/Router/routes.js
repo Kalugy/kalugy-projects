@@ -1,7 +1,19 @@
 import {svg2} from "./test"
+import {Router} from "./router"
 
 const src="http://localhost:3002/kalugy-projects/static/media/Photo.d794d38b17251f7d4bbc.jpg"
 const src2="https://kalugy.github.io/kalugy-projects/static/media/Photo.d794d38b17251f7d4bbc.jpg"
+    
+const SubPaths = {
+    blogone:{
+        path: "/kalugy-projects/v5/blog/blogone",
+        template: `
+            <div>hola</div>
+        `
+    }
+}
+
+let Router2 = new Router(SubPaths);
 
 export const PATHS = {
     home: {
@@ -16,79 +28,34 @@ export const PATHS = {
     blog: {
         path: "/kalugy-projects/v5/blog",
         template: `
-            <h1>Blogs</h1>
-            <main class="version5">
-            <section class="secc1">
-                <ul class="menu">
-                    <li class="menu-son">
-                        <a href="">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>Code 1</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>Code 2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>Code 3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>Code 3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>Code 3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-solid fa-pencil"></i>
-                            <span>Code 3</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="secc2">
-                <Data/>
-                <h3>Hello This is some examples</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <div>For example CLick me</div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <div>For example CLick me</div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quis beatae similique nam provident labore minus doloremque in assumenda nostrum eveniet, facere quia dolorem, qui laborum, adipisci reiciendis fugit. Ipsum.</p>
-                
-            </section>
-            <section class="secc3">
-                <ul>
-                    <li><i class="fa-solid fa-pencil"/>Show1</li>
-                    <li><i class="fa-solid fa-pencil"/>Show2</li>
-                </ul>
-            </section>
-        </main>
+            <div class="blog-main-content-v5">
+                <h1 class="blog-title-v5">Blogs</h1>
+                <main class="version5">
+                    <section class="secc1">
+                        <ul class="menu" id="clickMenuv5">
+                            <li class="menu-son">
+                                <i  class="fa-solid fa-pencil"></i>
+                                <span>Game 1</span>
+                            </li>
+                            <li class="menu-son">
+                                <i  class="fa-solid fa-pencil"></i>
+                                <span>Game 2</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="secc2" id="submain-content-blog-v5">
+                    </section>
+                    <section class="secc3" id="helpers-content-blog-v5">
+                        
+                    </section>
+                </main>
+            </div>
         `,
     },
     about: {
         path: "/kalugy-projects/v5/about",
         template: `
             <main class="about-main-content-v5">
-                
                 <h1 class="title-about">About Me</h1>
                 <div class="about-content-v5">
                     <div>
@@ -174,6 +141,12 @@ export const PATHS = {
                 
             </main>
         `,
+    },
+    blogone:{
+        path: "/kalugy-projects/v5/blog#test",
+        template: `
+            <div>hola</div>
+        `
     }
 }
 
