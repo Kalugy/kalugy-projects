@@ -18,8 +18,13 @@
 }
 
 .active-navbar-main-trans{
-    transform: translateY(-100px);
-    transition: all .3s ease-in-out;
+    animation: menu-transition 4s ease-in-out forwards;
+}
+
+@keyframes menu-transition {
+    to{
+        transform: translateY(-500px);
+    }
 }
 
 .menu-navbar-main{

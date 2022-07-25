@@ -32,6 +32,13 @@ function RouterNav() {
       let menu = document.querySelector(".nav-main-items")
         menu.classList.toggle('active-navbar-main-trans');
       }
+      document.getElementById('myButton2').onclick = function() {
+        let menu = document.querySelector(".nav-main-items")
+          if(!menu.classList.contains('active-navbar-main-trans'))
+          {
+            menu.classList.add('active-navbar-main-trans');
+          }
+        }
   })
 
   return (
@@ -42,8 +49,8 @@ function RouterNav() {
         <div className="navbar-icon-con" id="myButton">
           <i className="fa-solid fa-bars"></i>
         </div>
-        <nav className="nav-main-items">
-          <div className="nav-main-item">
+        <nav className="nav-main-items" id="myButton2">
+          <div className="nav-main-item" >
             <Link to="kalugy-projects/" className="a-link-nav-s">Html</Link>
           </div>
           <div className="nav-main-item">
@@ -53,7 +60,7 @@ function RouterNav() {
             <Link to="kalugy-projects/v3" className="a-link-nav-s">Html-Scss-Js</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v5" className="a-link-nav-s">VanillaJs(Routing)</Link>
+            <Link to="kalugy-projects/v5" className="a-link-nav-s">VanillaJs</Link>
           </div>
           <div className="nav-main-item">
             <Link to="kalugy-projects/v4" className="a-link-nav-s">React(Process)</Link>

@@ -4,9 +4,7 @@ import {mainBreakOut} from "./BreakOut"
 const BlogOne = `
     <div class="blog1-content-v5">
         <h4 id="rock-paper-scissor-hl">Rock Paper Scissors</h4>
-        <p>it's a really famous game
-        A simultaneous, zero-sum game, 
-        it has three possible outcomes: a draw, a win or a loss. 
+        <p>it's a really famous game. It has three possible outcomes: a draw, a win or a loss. 
         Rules:
         Rock win agains scissor
         Scissor win agains paper

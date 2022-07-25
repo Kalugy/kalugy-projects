@@ -7,11 +7,14 @@ import { Header } from "./Header/Header";
 import { Content } from "./Content/Content";
 import { Footer } from "./Footer/Footer";
 
+import { StackButtom } from "../StackButtom/StackButton";
+import data from "./Content.json"
 export const Option5= () => (
     <div className="page-v5-main">
         <Header/>
         <Content/>
         <Footer/>
+        <StackButtom content={data}></StackButtom>
     </div>
 );
 /*

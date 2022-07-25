@@ -146,4 +146,25 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 1. [Macrolayout- microlayout](https://web.dev/learn/design/micro-layouts/)
 2. [Append vs append Child](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
 
+### Day 7: June 20, 2022
+##### (Project section)
+
+**Today's Progress**: Project section layout
+
+**Thoughts** finish project section and start adding more things main
+animation
+
+**Link(s) to work**
+1. [Macrolayout- microlayout](https://web.dev/learn/design/micro-layouts/)
+2. [Append vs append Child](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
+
+### Day 8: June 21, 2022
+##### (Main section)
+
+**Today's Progress**: Finish Main Section and Adding queries for mobile
+
+**Thoughts** finish animated and adding some queryes to work in mobile.
+
+**Link(s) to work**
+no links
 
