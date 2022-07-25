@@ -59,8 +59,8 @@
 }
 
 .content-v5 .planet-v5-2 {
-  width: 80px;
-  height: 80px;
+  width: 350px;
+  height: 350px;
   background-color: white;
   position: absolute;
   top: 35%;
@@ -691,6 +691,15 @@
 @media screen and (max-width: 1200px) {
   .content-v5 {
     padding: 15rem;
+  }
+  .content-v5 .anstronaut {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  .content-v5 .planet-v5-2 {
+    width: 150px;
+    height: 150px;
+    top: 55%;
   }
   .about-content-v5 {
     -ms-grid-columns: (minmax(400px, 1fr))[auto-fill] !important;

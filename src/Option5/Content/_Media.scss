@@ -3,6 +3,16 @@
 @media screen and (max-width:"1200px") {
     .content-v5{
         padding: 15rem;
+        .anstronaut{
+            animation: none !important;
+        }
+        
+        .planet-v5-2{
+            
+            width: 150px;
+            height: 150px;
+            top: 55%;
+        }
     }
     //About
     .about-content-v5{
