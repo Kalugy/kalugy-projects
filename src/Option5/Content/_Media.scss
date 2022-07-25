@@ -1,0 +1,43 @@
+
+
+@media screen and (max-width:"1200px") {
+    .content-v5{
+        padding: 15rem;
+    }
+    //About
+    .about-content-v5{
+        
+        grid-template-columns: repeat(auto-fill ,minmax(400px,1fr)) !important;
+        div{
+            padding: 1rem .5rem !important;
+            p{
+                padding: 1rem 1rem !important;
+            }
+        }
+        svg{
+            padding: 0 1rem !important;
+        }
+    }
+    //Blogs
+    .version5{
+        grid-template-columns: .2fr 1fr 0 !important;
+        .secc1{
+            ul{
+                span{
+                    display: none !important;
+                }
+            }
+        }
+        .secc3{
+            display: none !important;
+        }
+    }
+    //Projects    
+    .main-content-project-v5{
+
+        .cards-projects-v5{
+            padding: 1rem;
+            margin: 0;
+        }
+    }
+}

@@ -14,8 +14,7 @@
     background-color: var(--color-primary-v5);
     color: var(--color-black-v5);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr 5fr 1fr;    
 }
 
 .header-v5 nav ul li{
@@ -26,6 +25,14 @@
 }
 
 
+@media screen and (max-width:800px) {
+    .header-v5 nav ul{
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: 1fr;
+    }
+}
+
+/*animation*/
 .header-v5 path:nth-child(1){
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;

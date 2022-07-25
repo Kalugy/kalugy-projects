@@ -16,18 +16,97 @@
     min-height: 100%;
     width: 100%;
     position: relative;
+    overflow: hidden;
     img{
-        position: relative;
+        position: absolute;
         top: 50%;
         left: 50%;
-        animation: crawl 6s ease-in-out;    
-        width: 50px;
-        height: 50px;
+        //animation: crawl 6s ease-in-out;    
+        width: 1px;
+        height: 1px;
         border-radius: 50%;
     }
-    img:hover{
-        border: 5px;
+    .rocket-1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: rocket 7s ease-in-out;    
+        width: 50px;
+        height: 50px;
+        opacity: 0;
     }
+    .planet-v5{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        animation: planet-anim 7s ease-in-out;
+    }
+    
+    .rocker-v5-2{
+        position: absolute;
+        top: 15%;
+        left: 49%;
+        animation: rocket-2 7s ease-in-out 7s;    
+        width: 80px;
+        height: 100px;
+        opacity: 0;
+    }
+    .planet-v5-2{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        border-radius: 50%;
+        opacity: 0;
+        animation: planet-2 7s ease-in-out 7s;    
+    }
+
+    .anstronaut{
+        width: 350px;
+        height: 350px;
+        //background-color: white;
+        position: absolute;
+        top: 30%;
+        left: 41%;
+        opacity: 0;
+        transform:scale(.1);
+        z-index: 100;
+        animation: anstronaut-w 7s ease-in-out 14s forwards;
+    }
+    .anstronaut:hover{
+        transform:scale(.2);
+    }
+
+    .rocker-v5-3{
+        position: absolute;
+        top: 42%;
+        left: 49%;
+        animation: rocket-3 7s ease-in-out 14s forwards;    
+        width: 100px;
+        height: 45%;
+        opacity: 0;
+    }
+
+    .planet-v5-3{
+        width: 100%;
+        height: 14%;
+        background-color: white;
+        position: absolute;
+        top: 86%;
+        left: 0%;
+        border-radius: 50% 50% 0 0 ;
+        opacity: 0;
+        animation: planet-2 7s ease-in-out 14s forwards;    
+    }
+
+
     .starv5-grid{
         position: relative;
         height: 100%;
@@ -61,16 +140,84 @@
     opacity: 0;
     transform: rotate(180deg) translateY(0%)  translateZ(0) scale(0);
   }
-  100% { 
+  90% { 
     opacity: 1;
     transform: rotate(0deg) translateX(-50%)  translateZ(0) scale(1);
   }
+  100% { 
+    opacity: 0;
+  }
 }
 
+//First frame
+@keyframes rocket {
+  0% { 
+    opacity: 0;
+    transform:  translateY(-800%) scale(0);
+  }
+  100% { 
+    opacity: 1;
+    transform:  translateY(0%) scale(1);
+  }
+}
+@keyframes planet-anim
+{
+    from{
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+//Second frame
+@keyframes planet-2
+{
+    from{
+        opacity: 1;
+        
+    }
+    to { 
+        opacity: 1;
+    }
+}
+@keyframes rocket-2
+{
+    from{
+        opacity: 1;
+    }
+    to { 
+        opacity: 1;
+        
+        transform:  translateY(50%) scale(1);
+    }
+}
+@keyframes rocket-3
+{
+    from{
+        opacity: 1;
+    }
+    to { 
+        opacity: 1;
+        
+    }
+}
+
+@keyframes anstronaut-w
+{
+    from{
+        opacity: 1;
+        
+        transform:  translateY(0) scale(.1);
+    }
+    to { 
+        opacity: 1;
+        transform:  translateY(50%) scale(.1);
+    }
+}
 
 //ABOUT
-
 .about-main-content-v5{
+    
     .title-about{
         text-align: center;
         font-size: 2rem;
@@ -81,12 +228,11 @@
     }
     .about-content-v5{
         display: grid;
-        grid-template-columns: repeat(2 ,1fr);
+        grid-template-columns: repeat(auto-fill ,minmax(550px,1fr));
         justify-content: center;
         justify-items: center;
         div{
             padding: 4rem 2rem;
-            
             color: var(--color-black-v5);
             h1{
                 padding: .1rem 0;
@@ -101,9 +247,9 @@
             }
         }
         svg{
-            padding: 0 0;
-            width: 600px;
-            height: 500px;    
+            padding: 3rem 3rem;
+            max-width: 100%;
+            max-height: 100%;    
         }
     }
 }
@@ -245,35 +391,6 @@
 
 
 
-@media screen and (max-width:"700px") {
-    .version5{
-        background-color: red;
-        grid-template-columns: 1fr 3fr 0;
-        .secc3{
-            display: none;
-        }
-    }
-}
-
-
-@media screen and (max-width:"480px") {
-    .version5{
-        background-color: red;
-        grid-template-columns: .5fr 3fr;
-        .secc1{
-            ul{
-                span{
-                    display: none;
-                }
-            }
-        }
-        .secc3{
-        
-            display: none;
-        }
-    }
-}
-
 
 //Project
 .main-content-project-v5{
@@ -289,24 +406,88 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 50px ;
+        gap: 8rem;
         margin: 1rem 4rem;
         justify-content: center;
         .card-v5{
-            padding: 1rem;
-            background-color: lightblue;
-            
+            background-color: var(--color-thrid-v5);
+            display: grid;
+            grid-template-rows: .5fr auto .5fr;
+            border-radius: 10px;
+            box-shadow: 1px 5px 10px .2px var(--color-grey-2-v5);
+            border: 1px solid var(--color-grey-3-v5);
+            color: var(--color-black-v5);
+            .header-title{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 1rem;
+                h4{
+                    font-size: 1rem;
+                    font-weight: 900;
+                }
+                i{
+                    color: rgb(110, 33, 110);
+                }
+                border-bottom: 1px solid var(--color-grey-3-v5);
+            }
+            img{
+                margin: 1rem;
+                border-top-left-radius: 30%;
+                border-bottom-right-radius: 30%;
+                box-shadow: .1px .1px 4px .2px var(--color-grey-3-v5);
+                width: 300px;
+                height: 150px;
+            }
+            p{
+                border-top: 1px solid var(--color-grey-3-v5);
+                padding: .4rem 1rem;
+            }
+        }
+        .card-v5:hover{
+            transform: translateY(-2px);
+            background-color: var(--color-grey-1-v5);
         }
     }
+    
     .cards-projects2-v5{
-        margin: 1rem 4rem;
         display: grid;
-        gap: 50px;
-        grid-template-columns: repeat(auto-fill,390px);
+        gap: 7.7rem;
+        grid-template-columns: repeat(auto-fill,340px);
+        place-items: center;
+        place-content: center;
+        color: var(--color-black-v5);
         .card-v5{
+            border-radius: 5%;    
+            background-color: var(--color-thrid-v5);
+            border: 1px solid var(--color-grey-3-v5);
+            box-shadow: 1px 1px 4px 1px var(--color-grey-1-v5);
+            .header-title{
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom: 1px solid var(--color-grey-5-v5);
+            }
+            img{
+                margin: 1.1rem;
+                border-top-left-radius: 30%;
+                border-bottom-right-radius: 30%;
+                box-shadow: .1px .1px 4px .2px var(--color-grey-3-v5);
+                width: 300px;
+                height: 150px;                
+            }
+        }
+        p{
             padding: 1rem;
-            background-color: lightblue;
+            border-top: 1px solid var(--color-grey-3-v5);
+            
+        }
+        .card-v5:hover{
+            transform: translateY(-2px);
+            background-color: var(--color-grey-1-v5);
         }
     }
 }
 
+@import './_Media.scss';

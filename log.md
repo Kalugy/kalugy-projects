@@ -131,3 +131,19 @@ adding breakout
 2. [Append vs append Child](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
 
 
+### Day 6: June 19, 2022
+##### (Project section)
+
+**Today's Progress**: Project section layout
+
+**Thoughts** understand layout flex and grid autosixing 
+learning more aobut box shadow
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+**Link(s) to work**
+1. [Macrolayout- microlayout](https://web.dev/learn/design/micro-layouts/)
+2. [Append vs append Child](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
+
+
