@@ -141,6 +141,16 @@ export const PATHS = {
                         <p>Angular Chat</p>
                     </div>
                 </div>
+            </main>
+        `,
+    }
+    
+}
+
+
+/*grid flexing projects 
+
+
                 <div class="cards-projects2-v5">    
                     <div class="card-v5">
                         <div class="header-title">
@@ -160,11 +170,7 @@ export const PATHS = {
                     </div>
                 </div>
                 
-            </main>
-        `,
-    }
-    
-}
+*/
 
 
 /*

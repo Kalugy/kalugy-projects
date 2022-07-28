@@ -67,7 +67,7 @@
   padding: 3rem 18rem;
 }
 
-.section {
+.main-div .section {
   -webkit-transform: translateY(-100%) scale(0);
           transform: translateY(-100%) scale(0);
   -webkit-transition: all .4s ease-in-out;
