@@ -181,3 +181,25 @@ pseudo classes:
 
 1. [Pseudo classes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
 2. [Pseudo Elements 7](https://blog.logrocket.com/a-guide-to-css-pseudo-elements/#:~:text=There%20are%20currently%20seven%20pseudo%2Delements%20in%20CSS.)
+
+### Day 9: June 26, 2022
+##### (Navbar section)
+
+**Today's Progress**: Navbar section layout
+
+**Thoughts** So at this day i feel a kind of overwelmed so i can not really focus
+so i could advance a lot 
+
+**Link(s) to work**
+1. [Navbar section](https://www.youtube.com/watch?v=Aj7HLsJenVg&t=4668s)
+
+### Day 10: June 27, 2022
+##### (Blog section)
+
+**Today's Progress**: Finish Navbar,articles, trending, quickread
+
+**Thoughts** Finish Navbar Section understand the code and start articles
+start trending and integrate swiperjs
+
+**Link(s) to work**
+1. [Blog section](https://www.youtube.com/watch?v=Aj7HLsJenVg&t=4668s)
