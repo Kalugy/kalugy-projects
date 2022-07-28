@@ -164,7 +164,20 @@ animation
 **Today's Progress**: Finish Main Section and Adding queries for mobile
 
 **Thoughts** finish animated and adding some queryes to work in mobile.
+7 elements on psdudo elemtns
+pseudo elements
+after
+before
+market
+palceholder
+firlitter
+filrstline
+selection
+pseudo classes:
+
+
 
 **Link(s) to work**
-no links
 
+1. [Pseudo classes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+2. [Pseudo Elements 7](https://blog.logrocket.com/a-guide-to-css-pseudo-elements/#:~:text=There%20are%20currently%20seven%20pseudo%2Delements%20in%20CSS.)

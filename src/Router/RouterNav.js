@@ -63,7 +63,7 @@ function RouterNav() {
             <Link to="kalugy-projects/v5" className="a-link-nav-s">VanillaJs</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v4" className="a-link-nav-s">React(Process)</Link>
+            <Link to="kalugy-projects/v4" className="a-link-nav-s">Blog</Link>
           </div>
           <div className="nav-main-item">
             <Link to="kalugy-projects/v6" className="a-link-nav-s">3D(Process)</Link>
