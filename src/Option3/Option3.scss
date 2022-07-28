@@ -2,7 +2,7 @@
 
 :root{
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-secondary: #a8c321;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -66,9 +66,9 @@
     padding: 3rem 18rem;
 }
 .main-div .section{
-    transform: translateY(-100%) scale(0);
-    transition: all .4s ease-in-out;
-    background-color: var(--color-primary);
+    //transform: translateY(-100%) scale(0);
+    //transition: all .4s ease-in-out;
+    //background-color: var(--color-primary);
 }
 .sec1{
     display: none;
