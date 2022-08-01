@@ -14,6 +14,7 @@ import {Option5} from '../Option5/Option5'
 import {StackButtom} from "../StackButtom/StackButton";
 
 import Main from '../Option1/Main'
+import {Start} from '../Start/Start'
 import './RouterNav.css'
 
 const stylesVersions={
@@ -45,13 +46,13 @@ function RouterNav() {
     <> 
     <BrowserRouter>
     
-      <div className="menu-navbar-main">
+      <div className="menu-navbar-main active-main-menu-p" id="main-menu-p">
         <div className="navbar-icon-con" id="myButton">
           <i className="fa-solid fa-bars"></i>
         </div>
         <nav className="nav-main-items" id="myButton2">
           <div className="nav-main-item" >
-            <Link to="kalugy-projects/" className="a-link-nav-s">Html</Link>
+            <Link to="kalugy-projects/v1" className="a-link-nav-s">Html</Link>
           </div>
           <div className="nav-main-item">
             <Link to="kalugy-projects/v2" className="a-link-nav-s">Html-Css</Link>
@@ -68,14 +69,18 @@ function RouterNav() {
           <div className="nav-main-item">
             <Link to="kalugy-projects/v6" className="a-link-nav-s">3D(Process)</Link>
           </div>
+          <div className="nav-main-item">
+            <Link to="kalugy-projects" className="a-link-nav-s">Start</Link>
+          </div>
         </nav>
       </div>
       <Routes>
-        <Route path="kalugy-projects/" element={<Main/>} />
+        <Route path="kalugy-projects/v1" element={<Main/>} />
         <Route path="kalugy-projects/v2" element={<Option2 />} />
         <Route path="kalugy-projects/v3" element={<Option3/>} />
         <Route path="kalugy-projects/v4" element={<Option4/>} />
         <Route path="kalugy-projects/v5" element={<Option5/>} />
+        <Route path="kalugy-projects/" element={<Start/>} />
       </Routes>
     </BrowserRouter>
     </>

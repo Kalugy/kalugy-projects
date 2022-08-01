@@ -100,7 +100,7 @@ const Home =()=>{
                     </div>
                 </a>
             </div>
-            <div className="sidebar dgrid">
+            <div className="sidebar d-grid">
                 <h3 className="title-featured-content-title">Trending News</h3>
                 <a href="" className="trending-news-box">
                     <div className="trending-news-image-box">

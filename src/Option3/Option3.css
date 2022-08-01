@@ -36,7 +36,7 @@
   font-size: 1.1rem;
   font-family: 'Poppins',sans-serif;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .option3-links {
@@ -61,7 +61,7 @@
 .option3-section {
   min-height: 100vh;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   padding: 3rem 18rem;

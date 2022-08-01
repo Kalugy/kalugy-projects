@@ -1,5 +1,9 @@
 
 
+.active-main-menu-p{
+    visibility: hidden;
+}
+
 .navbar-icon-con{
     padding: .1rem 0.01rem;
     width: 2rem;
