@@ -59,11 +59,11 @@ const Home =()=>{
             <div className="featured-content d-grip">
                 <div className="headline-banner">
                     <h3 className="headline fancy-border">
-                        <span className="place-items-center">Blog News</span>
+                        <span className="place-items-center">Blog Devs</span>
                     </h3>
-                    <span className="headline-description">Welcome to the main section... </span>
+                    <span className="headline-description">Welcome to the main section</span>
                 </div>
-                <a href="./post.html" className="article featured-article featured-article-1">
+                <a onClick={()=>Option4js("blog1")} className="article featured-article featured-article-1">
                     <img src={FaceTurn} alt="" className="article-image"/>
                     <span className="article-category">Animation</span>
                     <div className="article-data-container">
@@ -337,25 +337,32 @@ const Home =()=>{
         </section>
     </>
 )}
-
-
+const test ={
+    paddingTop: "100px"
+}
+const GeneralTest = () => (<div style={test}>Specifict Content Menu Process</div>)
 function RenderContent(props){
-    const isLoggedIn = props.isLoggedIn;
-    
-    switch(isLoggedIn){
+    const menuId = props.menuId;
+    switch(menuId){
         case "home": return <Home />;
-        case "blog": return <Blog />;
+        case "categories": return <GeneralTest />;
+        case "reviews": return <GeneralTest />;
+        case "news": return <GeneralTest />;
+        case "membership": return <GeneralTest />;
+        case "contact": return <GeneralTest />;
+        case "signIn": return <GeneralTest />;
+        case "signUp": return <GeneralTest />;
+    }
+    switch(menuId){
+        case "blog1": return <GeneralTest />;
     }
     return <></>;
 }
-
 function Option4js(){
-
-    const [navbarClick,setNavbarClick] = useState('home')
+    const [navbarClick,setNavbarClick] = useState("home")
 
     useEffect(()=>{
         //Select elements
-        
         const selectElement = selector => {
             const element = document.querySelector(selector)
             if(element) return element
@@ -373,7 +380,6 @@ function Option4js(){
         }
         //Var style scroll
         window.addEventListener('scroll',scrollHeader)
-
         //Menu and search pop up
         const menuToggleIcon = selectElement('#menu-toggle-icon')
         const toggleMenu = () => {
@@ -409,11 +415,10 @@ function Option4js(){
         window.addEventListener('keyup',event=>{
             if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
         }) 
-
-
-        
-
     },[])
+
+
+
     return(
         <div className="main-content-blog">             
             {/*<!--Header-->*/}
@@ -424,29 +429,29 @@ function Option4js(){
                     </a>
                     <div className="menu" id="menu">
                         <ul className="list">
-                            <li className="list-item">
-                                <a href="#" className="list-link current" onClick={()=>setNavbarClick('home')}>Home</a>
+                            <li className="list-item" onClick={()=>setNavbarClick('home')}>
+                                <a href="#" className="list-link current">Home</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('blog')}>Categories</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('categories')}>Categories</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link">Review</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('reviews')}>Review</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link">News</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('news')}>News</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link">Membership</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('membership')} >Membership</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link">Contact</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('contact')}>Contact</a>
                             </li>
                             <li className="list-item screen-lg-hidden">
-                                <a href="#" className="list-link">Sign in</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('signIn')}>Sign in</a>
                             </li>
                             <li className="list-item screen-lg-hidden">
-                                <a href="#" className="list-link">Sign up</a>
+                                <a href="#" className="list-link" onClick={()=>setNavbarClick('signUp')}>Sign up</a>
                             </li>
                         </ul>
                     </div>
@@ -483,7 +488,8 @@ function Option4js(){
                     <i className="ri-close-line"></i>
                 </button>
             </div>
-            <RenderContent isLoggedIn={navbarClick} />
+            {/*<!--Content-->*/}
+            <RenderContent menuId={navbarClick} />
             {/*footer*/}
             <footer className="footer section">
                 <div className="footer-container container d-grip">

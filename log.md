@@ -351,7 +351,7 @@ hard making desicions
 i think i was a little slow in desiding i have to understand not all is perfect so juts implement and then little by little get better features.
 
 **Link(s) to work**
-
+[color palet help](https://colorhunt.co/palette/eeeddee0ddaa203239141e27)
 
 template
 ### Day 19: June 28, 2022
