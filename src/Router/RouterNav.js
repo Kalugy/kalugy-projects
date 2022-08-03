@@ -53,35 +53,32 @@ function RouterNav() {
         </div>
         <nav className="nav-main-items" id="myButton2">
           <div className="nav-main-item" >
-            <Link to="kalugy-projects/v1" className="a-link-nav-s">Html</Link>
+            <Link to="/v1" className="a-link-nav-s">Html</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v2" className="a-link-nav-s">Html-Css</Link>
+            <Link to="/v2" className="a-link-nav-s">Html-Css</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v3" className="a-link-nav-s">Html-Scss-Js</Link>
+            <Link to="/v3" className="a-link-nav-s">Html-Scss-Js</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v5" className="a-link-nav-s">VanillaJs</Link>
+            <Link to="/v5" className="a-link-nav-s">VanillaJs</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v4" className="a-link-nav-s">Blog</Link>
+            <Link to="/v4" className="a-link-nav-s">Blog</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="kalugy-projects/v6" className="a-link-nav-s">3D(Process)</Link>
-          </div>
-          <div className="nav-main-item">
-            <Link to="kalugy-projects" className="a-link-nav-s">Start</Link>
+            <Link to="/v6" className="a-link-nav-s">3D(Process)</Link>
           </div>
         </nav>
       </div>
       <Routes>
-        <Route path="kalugy-projects/v1" element={<Main/>} />
-        <Route path="kalugy-projects/v2" element={<Option2 />} />
-        <Route path="kalugy-projects/v3" element={<Option3/>} />
-        <Route path="kalugy-projects/v4" element={<Option4/>} />
-        <Route path="kalugy-projects/v5" element={<Option5/>} />
-        <Route path="kalugy-projects/" element={<Start/>} />
+        <Route path="/v1" element={<Main/>} />
+        <Route path="/v2" element={<Option2 />} />
+        <Route path="/v3" element={<Option3/>} />
+        <Route path="/v4" element={<Option4/>} />
+        <Route path="/v5" element={<Option5/>} />
+        <Route path="/" element={<Start/>} />
       </Routes>
     </BrowserRouter>
     </>
