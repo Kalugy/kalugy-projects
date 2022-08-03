@@ -45,7 +45,7 @@ function RouterNav() {
 
   return (
     <> 
-    <HashRouter>
+    <BrowserRouter>
     
       <div className="menu-navbar-main active-main-menu-p" id="main-menu-p">
         <div className="navbar-icon-con" id="myButton">
@@ -83,7 +83,7 @@ function RouterNav() {
         <Route path="kalugy-projects/v5" element={<Option5/>} />
         <Route path="kalugy-projects/" element={<Start/>} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
     </>
   );
 }
