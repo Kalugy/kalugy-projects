@@ -361,3 +361,5 @@ template
 **Link(s) to work**
 1. [Finish section](https://www.youtube.com/watch?v=Aj7HLsJenVg&t=4668s)
 
+
+  /*"homepage": "https://kalugy.gitgub.io/kalugy-projects/",*/
