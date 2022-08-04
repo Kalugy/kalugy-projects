@@ -18,15 +18,7 @@ import Main from '../Option1/Main'
 import {Start} from '../Start/Start'
 import './RouterNav.css'
 
-const stylesVersions={
-  color:"white",
-  fontSize:"1rem",
-  fontWeight:"600"
-}
-
-const paddingTest={
-  padding:"15px"
-}
+import {Router2} from "./Router.js"
 
 function RouterNav() {
   useEffect(()=>{
@@ -45,8 +37,8 @@ function RouterNav() {
 
   return (
     <> 
-    <BrowserRouter>
-    
+    <Router2></Router2>
+      {/*
       <div className="menu-navbar-main active-main-menu-p" id="main-menu-p">
         <div className="navbar-icon-con" id="myButton">
           <i className="fa-solid fa-bars"></i>
@@ -79,8 +71,7 @@ function RouterNav() {
         <Route path="/v4" element={<Option4/>} />
         <Route path="/v5" element={<Option5/>} />
         <Route path="/" element={<Start/>} />
-      </Routes>
-    </BrowserRouter>
+      </Routes>*/ }
     </>
   );
 }

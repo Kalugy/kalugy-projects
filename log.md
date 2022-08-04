@@ -353,8 +353,50 @@ i think i was a little slow in desiding i have to understand not all is perfect 
 **Link(s) to work**
 [color palet help](https://colorhunt.co/palette/eeeddee0ddaa203239141e27)
 
+### Day 16: June 28, 2022
+##### (Finish All certifications)
+**Today's Progress** Good github pages
+**Thoughts** 
+/*"homepage": "https://kalugy.gitgub.io/kalugy-projects/",*/
+so decided to change server, because github pages
+do not support spa router and f5 on pages you have to handle in another situations, i want to learn another server so 
+choose netlify 
+Also I lose two interviews
+One challenge in node i thought the server when i was making the code stop running and the result was the same so funny but next time i will sure to make pass the exam no matter the server 
+**Link(s) to work**
+
+### Day 17: June 28, 2022
+##### (Finish All certifications)
+**Today's Progress** Change all routing main system support f5
+**Thoughts** 
+A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. The goal is faster transitions that make the website feel more like a native app.
+
+In a SPA, a page refresh never occurs; instead, all necessary HTML, JavaScript, and CSS code is either retrieved by the browser with a single page load,[1] or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions.
+
+so before i think all html and css and js was load to page
+that happen and the page were really slow
+So spa apllication are for load little code depending of the user interaction
+
+somehow with framworks now HTML is short part of code 
+
+future task to end post
+- Create routing system for Blog with the new system
+- Create Blog1
+- Create Blog2
+- Create Blog3
+- Also i want that blogs state at database so info would on database at some point not for now 
+- Create Log In but not working for now 
+
+Finish first steps on portfolio routing 
+
+Start to build a menu
+Start to build the 3d example
+
+**Link(s) to work**
+1. [SPA](https://en.wikipedia.org/wiki/Single-page_application)
+
 template
-### Day 19: June 28, 2022
+### Day 18: June 28, 2022
 ##### (Finish All certifications)
 **Today's Progress** platzy
 **Thoughts** 
@@ -362,4 +404,4 @@ template
 1. [Finish section](https://www.youtube.com/watch?v=Aj7HLsJenVg&t=4668s)
 
 
-  /*"homepage": "https://kalugy.gitgub.io/kalugy-projects/",*/
+

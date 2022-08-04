@@ -12,6 +12,8 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom";
+
 
 const Home =()=>{
     useEffect(()=>{
@@ -63,7 +65,8 @@ const Home =()=>{
                     </h3>
                     <span className="headline-description">Welcome to the main section</span>
                 </div>
-                <a onClick={()=>Option4js("blog1")} className="article featured-article featured-article-1">
+                <a className="article featured-article featured-article-1">
+                    <Link to="blog1">React Fundamentals</Link>
                     <img src={FaceTurn} alt="" className="article-image"/>
                     <span className="article-category">Animation</span>
                     <div className="article-data-container">

@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import RouterNav from './Router/RouterNav';
+import {Router} from './Router/Router';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <RouterNav></RouterNav> 
-    </div>
+    
+    <BrowserRouter>
+      <Router></Router> 
+    </BrowserRouter>
   );
 }
 
