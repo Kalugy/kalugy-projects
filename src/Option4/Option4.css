@@ -919,8 +919,8 @@
     }
   }
   .featured-articles-container {
-    -ms-grid-columns: 1fr 40rem !important;
-        grid-template-columns: 1fr 40rem !important;
+    -ms-grid-columns: 1fr 30rem !important;
+        grid-template-columns: 1fr 30rem !important;
   }
   .trending-news-image-box {
     width: 10rem !important;
@@ -955,7 +955,7 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   .featured-article {
     grid-column: 3/-1 !important;
   }

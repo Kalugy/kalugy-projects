@@ -395,6 +395,19 @@ Start to build the 3d example
 **Link(s) to work**
 1. [SPA](https://en.wikipedia.org/wiki/Single-page_application)
 
+
+
+
+template
+### Day 18: july4, 2022
+##### (Blog react nested routes)
+**Today's Progress** Blog react nested routes
+**Thoughts** i think i have to change a redefine all the routes on blog but now is working
+**Link(s) to work**
+1. [Router nested React](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/route-objects)
+
+
+
 template
 ### Day 18: June 28, 2022
 ##### (Finish All certifications)

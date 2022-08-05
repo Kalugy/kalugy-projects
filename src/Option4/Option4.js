@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import { Link } from "react-router-dom";
 
 
-const Home =()=>{
+export const Home =()=>{
     useEffect(()=>{
         // Swiper
         const swiper = new Swiper(".swiper", {
@@ -65,8 +65,7 @@ const Home =()=>{
                     </h3>
                     <span className="headline-description">Welcome to the main section</span>
                 </div>
-                <a className="article featured-article featured-article-1">
-                    <Link to="blog1">React Fundamentals</Link>
+                <Link to="blog1" className="article featured-article featured-article-1">
                     <img src={FaceTurn} alt="" className="article-image"/>
                     <span className="article-category">Animation</span>
                     <div className="article-data-container">
@@ -77,8 +76,8 @@ const Home =()=>{
                         </div>
                         <h3 className="title article-title">Open Tool Animation</h3>
                     </div>
-                </a>
-                <a href="./post.html" className="article featured-article featured-article-2">
+                </Link>
+                <Link to="blog2" className="article featured-article featured-article-2">
                     <img src={FireChar} alt="" className="article-image"/>
                     <span className="article-category">Technology</span>
                     <div className="article-data-container">
@@ -89,8 +88,8 @@ const Home =()=>{
                         </div>
                         <h3 className="title article-title">Firechat Angular Chat</h3>
                     </div>
-                </a>
-                <a href="./post.html" className="article featured-article featured-article-3">
+                </Link>
+                <Link to="blog3" className="article featured-article featured-article-3">
                     <img src={Threepic} alt="" className="article-image"/>
                     <span className="article-category">Technology</span>
                     <div className="article-data-container">
@@ -101,7 +100,7 @@ const Home =()=>{
                         </div>
                         <h3 className="title article-title">ThreeJs cube rubik</h3>
                     </div>
-                </a>
+                </Link>
             </div>
             <div className="sidebar d-grid">
                 <h3 className="title-featured-content-title">Trending News</h3>
@@ -340,29 +339,7 @@ const Home =()=>{
         </section>
     </>
 )}
-const test ={
-    paddingTop: "100px"
-}
-const GeneralTest = () => (<div style={test}>Specifict Content Menu Process</div>)
-function RenderContent(props){
-    const menuId = props.menuId;
-    switch(menuId){
-        case "home": return <Home />;
-        case "categories": return <GeneralTest />;
-        case "reviews": return <GeneralTest />;
-        case "news": return <GeneralTest />;
-        case "membership": return <GeneralTest />;
-        case "contact": return <GeneralTest />;
-        case "signIn": return <GeneralTest />;
-        case "signUp": return <GeneralTest />;
-    }
-    switch(menuId){
-        case "blog1": return <GeneralTest />;
-    }
-    return <></>;
-}
 function Option4js(){
-    const [navbarClick,setNavbarClick] = useState("home")
 
     useEffect(()=>{
         //Select elements
@@ -420,41 +397,39 @@ function Option4js(){
         }) 
     },[])
 
-
-
     return(
         <div className="main-content-blog">             
             {/*<!--Header-->*/}
             <header className="header" id="header">
                 <nav className="navbar container">
-                    <a href="#" onClick={()=>setNavbarClick('home')}>
+                    <a href="#" >
                         <h2 className="logo" >KalugyDev</h2>
                     </a>
                     <div className="menu" id="menu">
                         <ul className="list">
-                            <li className="list-item" onClick={()=>setNavbarClick('home')}>
+                            <li className="list-item" >
                                 <a href="#" className="list-link current">Home</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('categories')}>Categories</a>
+                                <a href="#" className="list-link" >Categories</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('reviews')}>Review</a>
+                                <a href="#" className="list-link" >Review</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('news')}>News</a>
+                                <a href="#" className="list-link" >News</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('membership')} >Membership</a>
+                                <a href="#" className="list-link"  >Membership</a>
                             </li>
                             <li className="list-item">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('contact')}>Contact</a>
+                                <a href="#" className="list-link" >Contact</a>
                             </li>
                             <li className="list-item screen-lg-hidden">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('signIn')}>Sign in</a>
+                                <a href="#" className="list-link" >Sign in</a>
                             </li>
                             <li className="list-item screen-lg-hidden">
-                                <a href="#" className="list-link" onClick={()=>setNavbarClick('signUp')}>Sign up</a>
+                                <a href="#" className="list-link" >Sign up</a>
                             </li>
                         </ul>
                     </div>
@@ -492,7 +467,6 @@ function Option4js(){
                 </button>
             </div>
             {/*<!--Content-->*/}
-            <RenderContent menuId={navbarClick} />
             {/*footer*/}
             <footer className="footer section">
                 <div className="footer-container container d-grip">
