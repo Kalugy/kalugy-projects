@@ -1,16 +1,12 @@
-import Photo from '../Photo.jpg';
+import "./blog.css"
+import Photo from "../../../../Photo.jpg"
 
-import { Outlet, Link, useRoutes, useParams } from "react-router-dom";
-
-
-export const Blog =() => {
-    let { id } = useParams("id");
-
+export const Blog2 = (id) =>{
     return(
-        <section className="blog-post section-header-offset">
+    <section className="blog-post section-header-offset">
         <div className="blog-post-container container">
             <div className="blog-post-data">
-                <h3 className="title blog-post-title">{id}</h3>
+                <h3 className="title blog-post-title">{id.id.title}</h3>
                 <div className="article-data">
                     <span>Dec 6th 2021</span>
                     <span className="article-data-spacer"></span>
@@ -59,7 +55,5 @@ export const Blog =() => {
             </div>
         </div>
     </section>
-
-
     )
 }

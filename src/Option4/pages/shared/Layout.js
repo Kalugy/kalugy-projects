@@ -1,6 +1,8 @@
 
 import { useEffect,useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import data from "./Content.json"
+import {StackButtom} from "../../../StackButtom/StackButton"
 
 export const Layout=()=>{
 
@@ -230,6 +232,8 @@ export const Layout=()=>{
                     </div>
                 </div>
             </footer>
+            {/*Button */}
+            <StackButtom content={data}/>
         </div>
     );
 }

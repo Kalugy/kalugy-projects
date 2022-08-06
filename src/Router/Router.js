@@ -5,9 +5,9 @@ import {Start} from '../Start/Start'
 import Main from '../Option1/Main'
 import Option2 from '../Option2/Main'
 import Option3 from '../Option3/Option3'
-import Option4,{Home} from '../Option4/Option4'
-import {Blog} from '../Option4/Blog'
-import {Layout} from '../Option4/Layout'
+import {Home} from '../Option4/pages/home/Home'
+import {Blog} from '../Option4/pages/blog/Blog'
+import {Layout} from '../Option4/pages/shared/Layout'
 
 import {Option5} from '../Option5/Option5'
 
@@ -93,7 +93,7 @@ function Menu() {
             <Link to="/v5" className="a-link-nav-s">VanillaJs</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="/v4" className="a-link-nav-s">Blog (website example)</Link>
+            <Link to="/v4" className="a-link-nav-s">Blog</Link>
           </div>
           <div className="nav-main-item">
             <Link to="/v6" className="a-link-nav-s">3D(Process)</Link>
