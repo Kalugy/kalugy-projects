@@ -10,7 +10,7 @@ export const Blog =() => {
         switch(id){
             case "blog1": return <Blog1 id={content}/>; 
             case "blog2": return <Blog2 id={content}/>;
-            case "blog2": return <Blog3 id={content}/>;
+            case "blog3": return <Blog3 id={content}/>;
         }
     }
     return(

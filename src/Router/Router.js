@@ -5,11 +5,20 @@ import {Start} from '../Start/Start'
 import Main from '../Option1/Main'
 import Option2 from '../Option2/Main'
 import Option3 from '../Option3/Option3'
+import {Option5} from '../Option5/Option5'
+
+//Blogs
 import {Home} from '../Option4/pages/home/Home'
+import {Categories} from '../Option4/pages/categories/Categories'
+import {Review} from '../Option4/pages/review/Review'
+import {News} from '../Option4/pages/news/News'
+import {Membership} from '../Option4/pages/membership/Membership'
+import {Contact} from '../Option4/pages/contact/Contact'
+import {SignIn} from '../Option4/pages/signin/SingIn'
+import {SignUp} from '../Option4/pages/signup/SignUp'
 import {Blog} from '../Option4/pages/blog/Blog'
 import {Layout} from '../Option4/pages/shared/Layout'
 
-import {Option5} from '../Option5/Option5'
 
 import './RouterNav.css'
 
@@ -27,7 +36,13 @@ let routes =  [
         children: [
           { index: true, element: <Home />},
           { path: "/v4/:id", element: <Blog /> },
-          { path: "/v4/category", element: <Category /> },
+          { path: "/v4/categories", element: <Categories /> },
+          { path: "/v4/review", element: <Review /> },
+          { path: "/v4/news", element: <News /> },
+          { path: "/v4/membership", element: <Membership /> },
+          { path: "/v4/contact", element: <Contact /> },
+          { path: "/v4/signin", element: <SignIn /> },
+          { path: "/v4/signup", element: <SignUp /> },
         ],
       },
       {path: "/v5",element: <Option5 />},
@@ -35,20 +50,6 @@ let routes =  [
     ],
   },
 ];
-
-const test0 = {
-  minHeight: "40vh"
-}
-
-function Category() {
-  return (
-    <div>
-      <h2 style={test0}>Category</h2>
-      <div>Specific menu to make</div>
-      <div>Specific menu to make</div>
-    </div>
-  );
-}
 
 export const Router=()=> {
   let element = useRoutes(routes);

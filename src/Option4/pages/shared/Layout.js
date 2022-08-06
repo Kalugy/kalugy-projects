@@ -59,7 +59,22 @@ export const Layout=()=>{
         formCloseBtn.addEventListener('click',()=>searchFormContainer.classList.remove('activated'))
         window.addEventListener('keyup',event=>{
             if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
-        }) 
+        })
+        
+        const menuClick = document.querySelectorAll("#list-current")[0]
+        const secClick = document.querySelectorAll("#list-current .list-item")
+        
+        menuClick.addEventListener('click',(e)=>{
+            
+            const id = e.target.dataset.id 
+            if(id){
+                secClick.forEach(element => {
+                    element.classList.remove('current')
+                });
+
+            }
+        })
+
     },[])
 
     return(
@@ -71,30 +86,30 @@ export const Layout=()=>{
                         <h2 className="logo" >KalugyDev</h2>
                     </Link>
                     <div className="menu" id="menu">
-                        <ul className="list">
+                        <ul className="list" id="list-current">
                             <li className="list-item" >
-                                <Link to="/v4" className="list-link current">Home</Link>
+                                <Link to="/v4" className="list-link" data-id="homev4">Home</Link>
                             </li>
                             <li className="list-item">
-                                <Link to="/v4/category" className="list-link" >Categories</Link>
+                                <Link to="/v4/categories" className="list-link" data-id="categoryv4">Categories</Link>
                             </li>
                             <li className="list-item">
-                                <Link to="/v4/category" className="list-link" >Review</Link>
+                                <Link to="/v4/review" className="list-link" data-id="reviewv4">Review</Link>
                             </li>
                             <li className="list-item">
-                                <Link to="/v4/category" className="list-link" >News</Link>
+                                <Link to="/v4/news" className="list-link" >News</Link>
                             </li>
                             <li className="list-item">
-                                <Link to="/v4/category" className="list-link"  >Membership</Link>
+                                <Link to="/v4/membership" className="list-link"  >Membership</Link>
                             </li>
                             <li className="list-item">
-                                <Link to="/v4/category" className="list-link" >Contact</Link>
+                                <Link to="/v4/contact" className="list-link" >Contact</Link>
                             </li>
                             <li className="list-item screen-lg-hidden">
-                                <Link to="/v4/category" className="list-link" >Sign in</Link>
+                                <Link to="/v4/signin" className="list-link" >Sign in</Link>
                             </li>
                             <li className="list-item screen-lg-hidden">
-                                <Link to="/v4/category" className="list-link" >Sign up</Link>
+                                <Link to="/v4/signup" className="list-link" >Sign up</Link>
                             </li>
                         </ul>
                     </div>
@@ -110,10 +125,10 @@ export const Layout=()=>{
                             <i className="ri-menu-3-line open-menu-icon"></i>
                             <i className="ri-close-line close-menu-icon"></i>
                         </button>
-                        <a href="" className="list-link screen-sm-hidden"> sign in</a>
-                        <a href="#" className="btn sign-up-btn fancy-border screen-sm-hidden">
+                        <Link to="/v4/signin" className="list-link screen-sm-hidden"> sign in</Link>
+                        <Link to="/v4/signup" className="btn sign-up-btn fancy-border screen-sm-hidden">
                             <span>Sign up</span>
-                        </a>
+                        </Link>
                     </div>
                 </nav>
             </header>
@@ -138,49 +153,31 @@ export const Layout=()=>{
                 <div className="footer-container container d-grip">
                     <div className="company-data">
                         <a href="">
-                            <h2 className="logo">KalugyDev</h2>
+                            <h2 className="logo">@KalugyDev</h2>
                         </a>
                         <p className="company-description">
                             Blog example to testing and learn more about layout css 
                         </p>
                         <ul className="list social-media">
                             <li className="list-item">
-                                <a href="" className="list-link">
-                                    <i className="ri-instagram-line"></i>
-                                </a>
-                                <a href="" className="list-link">
-                                    <i className="ri-facebook-circle-line"></i>
-                                </a>
-                                <a href="" className="list-link">
+                                <a href="https://twitter.com/KalugyDev" target="_blank" className="list-link">
                                     <i className="ri-twitter-line"></i>
-                                </a>
-                                <a href="" className="list-link">
-                                    <i className="ri-pinterest-line"></i>
                                 </a>
                             </li>
                         </ul>
-                        <span className="copyright-notice">&copy; 2022 Blog. Made by Kalugy</span>
+                        <span className="copyright-notice">&copy; 2022 Made by @KalugyDev</span>
                     </div>
                     <div>
-                        <h6 className="title footer-title">Categories</h6>
+                        <h6 className="title footer-title">Popular Tags</h6>
                         <ul className="list footer-list">
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <a href="/v4" className="list-link">Arquitecture</a>
                             </li>
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <a href="/v4" className="list-link">Code</a>
                             </li>
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <a href="/v4" className="list-link">Front end</a>
                             </li>
                         </ul>
                     </div>
@@ -188,45 +185,24 @@ export const Layout=()=>{
                         <h6 className="title footer-title">Links</h6>
                         <ul className="list footer-list">
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <Link to="/v4" className="list-link">Home</Link>
                             </li>
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <Link to="/v4/signin" className="list-link">Sign In</Link>
                             </li>
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <Link to="/v4/signup" className="list-link">Sign Up</Link>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h6 className="title footer-title">Company</h6>
+                        <h6 className="title footer-title">Blogs</h6>
                         <ul className="list footer-list">
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <Link to="/v4/blog2" className="list-link">Client Server</Link>
                             </li>
                             <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
-                            </li>
-                            <li className="list-item">
-                                <a href="" className="list-link">Sample Item</a>
+                                <Link to="/v4/blog3" className="list-link">Micro Front ends</Link>
                             </li>
                         </ul>
                     </div>

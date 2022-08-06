@@ -5,6 +5,9 @@ import FaceTurn from '../../../faceTurn.PNG'
 import FireChar from '../../../firechat.PNG'
 import Portfolio from '../../../portfolio.PNG'
 import Threepic from '../../../threepic.PNG'
+import HistoryWeb from '../../assets/history-of-web.jpg'
+import ClientServer from '../../assets/client-server-model.png'
+import MicroFrontEnd from '../../assets/micro-frontends.jpg'
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination } from 'swiper';
 // import Swiper and modules styles
@@ -36,12 +39,12 @@ export const Home =()=>{
             breakpoints: {
                 // 700px and up shoes 2 slides
                 700: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 
                 },
                 // 1200px and up shoes 3 slides
                 1200: {
-                    slidesPerView: 3
+                    slidesPerView: 1
                 }
             }   
 
@@ -64,31 +67,31 @@ export const Home =()=>{
                     <span className="headline-description">Welcome to Blogs!</span>
                 </div>
                 <Link to="blog1" className="article featured-article featured-article-1">
-                    <img src={FaceTurn} alt="" className="article-image"/>
-                    <span className="article-category">Animation</span>
+                    <img src={HistoryWeb} alt="" className="article-image"/>
+                    <span className="article-category">History</span>
                     <div className="article-data-container">
                         <div className="article-data">
-                            <span>Jan 5th 2021</span>
+                            <span>Jul 5th 2022</span>
                             <span className="article-data-spacer"></span>
-                            <span>5 Min read</span>
+                            <span>15 Min read</span>
                         </div>
-                        <h3 className="title article-title">Open Tool Animation</h3>
+                        <h3 className="title article-title">Web History</h3>
                     </div>
                 </Link>
                 <Link to="blog2" className="article featured-article featured-article-2">
-                    <img src={FireChar} alt="" className="article-image"/>
-                    <span className="article-category">Technology</span>
+                    <img src={ClientServer} alt="" className="article-image"/>
+                    <span className="article-category">Arquitecture</span>
                     <div className="article-data-container">
                         <div className="article-data">
                             <span>Jan 5th 2020</span>
                             <span className="article-data-spacer"></span>
                             <span>4 Min read</span>
                         </div>
-                        <h3 className="title article-title">Firechat Angular Chat</h3>
+                        <h3 className="title article-title">Client servers </h3>
                     </div>
                 </Link>
                 <Link to="blog3" className="article featured-article featured-article-3">
-                    <img src={Threepic} alt="" className="article-image"/>
+                    <img src={MicroFrontEnd} alt="" className="article-image"/>
                     <span className="article-category">Technology</span>
                     <div className="article-data-container">
                         <div className="article-data">
@@ -96,54 +99,54 @@ export const Home =()=>{
                             <span className="article-data-spacer"></span>
                             <span>8 Min read</span>
                         </div>
-                        <h3 className="title article-title">ThreeJs cube rubik</h3>
+                        <h3 className="title article-title">Micro frontends</h3>
                     </div>
                 </Link>
             </div>
             <div className="sidebar d-grid">
                 <h3 className="title-featured-content-title">Trending News</h3>
-                <a href="" className="trending-news-box">
+                <Link to="/v4/blog1" className="trending-news-box">
                     <div className="trending-news-image-box">
                         <span className="trending-number place-items-center">1</span>
-                        <img src={Threepic} alt="photo" className="article-image"/>
+                        <img src={HistoryWeb} alt="photo" className="article-image"/>
                     </div>
                     <div className="trending-news-data">
                         <div className="article-data">
-                            <span>Jan 5th 2021</span>
+                            <span>Jul 5th 2021</span>
                             <span className="article-data-spacer"></span>
                             <span>5 Min read</span>
                         </div>
-                        <h3 className="title article-title">Article</h3>
+                        <h3 className="title article-title">Web History</h3>
                     </div>
-                </a>
-                <a href="" className="trending-news-box">
+                </Link>
+                <Link to="/v4/blog2" className="trending-news-box">
                     <div className="trending-news-image-box">
                         <span className="trending-number place-items-center">2</span>
-                        <img src={FireChar} alt="photo" className="article-image"/>
+                        <img src={ClientServer} alt="photo" className="article-image"/>
                     </div>
                     <div className="trending-news-data">
                         <div className="article-data">
                             <span>Dec 5th 2021</span>
                             <span className="article-data-spacer"></span>
-                            <span>8 Min read</span>
+                            <span>5 Min read</span>
                         </div>
-                        <h3 className="title article-title">Angular article</h3>
+                        <h3 className="title article-title">Client Servers</h3>
                     </div>
-                </a>
-                <a href="" className="trending-news-box">
+                </Link>
+                <Link to="/v4/blog3" className="trending-news-box">
                     <div className="trending-news-image-box">
                         <span className="trending-number place-items-center">3</span>
-                        <img src={FaceTurn} alt="photo" className="article-image"/>
+                        <img src={MicroFrontEnd} alt="photo" className="article-image"/>
                     </div>
                     <div className="trending-news-data">
                         <div className="article-data">
                             <span>Dec 5th 2021</span>
                             <span className="article-data-spacer"></span>
-                            <span>2 Min read</span>
+                            <span>5 Min read</span>
                         </div>
-                        <h3 className="title article-title">Animation</h3>
+                        <h3 className="title article-title">Microfrontends</h3>
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
         </section>
@@ -155,61 +158,39 @@ export const Home =()=>{
                 </h2>
                 <div className="swiper">
                     <div className="swiper-wrapper">
-                        <a href="" className="article swiper-slide">
-                            <img src={FireChar} alt="" className="article-image"></img>
+                        <Link to="blog1" className="article swiper-slide">
+                            <img src={HistoryWeb} alt="" className="article-image"></img>
                             <div className="article-data-container">
                                 <div className="article-data">
                                     <span>Jan 5th 2021</span>
                                     <span className="article-data-spacer"></span>
                                     <span>8 Min read</span>
                                 </div>
-                                <h3 className="title article-title">Firechat</h3>
+                                <h3 className="title article-title">Web History</h3>
                             </div>
-                        </a>
-                        <a href="" className="article swiper-slide">
-                            <img src={Threepic} alt="" className="article-image"></img>
+                        </Link>
+                        <Link to="blog2" className="article swiper-slide">
+                            <img src={ClientServer} alt="" className="article-image"></img>
                             <div className="article-data-container">
                                 <div className="article-data">
                                     <span>Jan 5th 2021</span>
                                     <span className="article-data-spacer"></span>
                                     <span>1 Min read</span>
                                 </div>
-                                <h3 className="title article-title">Threejs</h3>
+                                <h3 className="title article-title">Client Server</h3>
                             </div>
-                        </a>
-                        <a href="" className="article swiper-slide">
-                            <img src={Threepic} alt="" className="article-image"></img>
+                        </Link>
+                        <Link to="blog3" className="article swiper-slide">
+                            <img src={MicroFrontEnd} alt="" className="article-image"></img>
                             <div className="article-data-container">
                                 <div className="article-data">
                                     <span>Jan 5th 2021</span>
                                     <span className="article-data-spacer"></span>
                                     <span>8 Min read</span>
                                 </div>
-                                <h3 className="title article-title">Threejs2</h3>
+                                <h3 className="title article-title">Microfront ends</h3>
                             </div>
-                        </a>
-                        <a href="" className="article swiper-slide">
-                            <img src={Portfolio} alt="" className="article-image"></img>
-                            <div className="article-data-container">
-                                <div className="article-data">
-                                    <span>Jan 5th 2021</span>
-                                    <span className="article-data-spacer"></span>
-                                    <span>8 Min read</span>
-                                </div>
-                                <h3 className="title article-title">Portfolio</h3>
-                            </div>
-                        </a>
-                        <a href="" className="article swiper-slide">
-                            <img src={Portfolio} alt="" className="article-image"></img>
-                            <div className="article-data-container">
-                                <div className="article-data">
-                                    <span>Jan 5th 2021</span>
-                                    <span className="article-data-spacer"></span>
-                                    <span>8 Min read</span>
-                                </div>
-                                <h3 className="title article-title">Portfolio v2</h3>
-                            </div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="swiper-button-prev swiper-controls"></div>
                     <div className="swiper-button-next swiper-controls"></div>
@@ -225,9 +206,9 @@ export const Home =()=>{
                 </h2>
 
                 <div className="older-posts-grid-wrapper d-grip">
-                    <a href="" className="article d-grip">
+                    <Link to="blog1" className="article d-grip">
                         <div className="older-posts-article-image-wrapper">
-                            <img src={FireChar} alt="" className="article-image" />
+                            <img src={HistoryWeb} alt="" className="article-image" />
                         </div>
                         <div className="article-data-container">
                             <div className="article-data">
@@ -235,52 +216,10 @@ export const Home =()=>{
                                 <span className="article-data-spacer"></span>
                                 <span>8 Min read</span>
                             </div>
-                            <h3 className="title article-title">Angular chat</h3>
-                            <p className="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ex.</p>
+                            <h3 className="title article-title">Web History</h3>
+                            <p className="article-description">A brief summary of web history, who created</p>
                         </div>
-                    </a>
-                    <a href="" className="article d-grip">
-                        <div className="older-posts-article-image-wrapper">
-                            <img src={FaceTurn} alt="" className="article-image" />
-                        </div>
-                        <div className="article-data-container">
-                            <div className="article-data">
-                                <span>Jan 5th 2021</span>
-                                <span className="article-data-spacer"></span>
-                                <span>8 Min read</span>
-                            </div>
-                            <h3 className="title article-title">Face turn</h3>
-                            <p className="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ex.</p>
-                        </div>
-                    </a>
-                    <a href="" className="article d-grip">
-                        <div className="older-posts-article-image-wrapper">
-                            <img src={Portfolio} alt="" className="article-image" />
-                        </div>
-                        <div className="article-data-container">
-                            <div className="article-data">
-                                <span>Jan 5th 2021</span>
-                                <span className="article-data-spacer"></span>
-                                <span>8 Min read</span>
-                            </div>
-                            <h3 className="title article-title">Portfolio</h3>
-                            <p className="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ex.</p>
-                        </div>
-                    </a>
-                    <a href="" className="article d-grip">
-                        <div className="older-posts-article-image-wrapper">
-                            <img src={Threepic} alt="" className="article-image" />
-                        </div>
-                        <div className="article-data-container">
-                            <div className="article-data">
-                                <span>Jan 5th 2021</span>
-                                <span className="article-data-spacer"></span>
-                                <span>8 Min read</span>
-                            </div>
-                            <h3 className="title article-title">Three</h3>
-                            <p className="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ex.</p>
-                        </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="see-more-container">
                     <a href="" className="btn see-more-btn place-items-center">
@@ -293,24 +232,16 @@ export const Home =()=>{
         <section className="popular-tags section">
             <div className="container">
                 <h2 className="title section-title" data-name="Popular tags">
-                    Tecnologies Tags
+                    Popular Tags
                 </h2>
                 <div className="popular-tags-container d-grip">
                     <a href="" className="article">
-                        <span className="tag-name">#Angular</span>
+                        <span className="tag-name">#Arquitecture</span>
                         <img src={FireChar} alt="" className="article-image" />
                     </a>
                     <a href="" className="article">
-                        <span className="tag-name">#Threejs</span>
-                        <img src={Threepic} alt="" className="article-image" />
-                    </a>
-                    <a href="" className="article">
-                        <span className="tag-name">#VanillaJs</span>
-                        <img src={Portfolio} alt="" className="article-image" />
-                    </a>
-                    <a href="" className="article">
-                        <span className="tag-name">#Animation</span>
-                        <img src={FaceTurn} alt="" className="article-image" />
+                        <span className="tag-name">#Tecnology</span>
+                        <img src={FireChar} alt="" className="article-image" />
                     </a>
                 </div>
             </div>
