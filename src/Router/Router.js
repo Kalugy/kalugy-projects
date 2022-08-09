@@ -7,6 +7,7 @@ import Option2 from '../Option2/Main'
 import Option3 from '../Option3/Option3'
 import {Option5} from '../Option5/Option5'
 
+import {Option6} from '../Option6/Option6'
 //Blogs
 import {Home} from '../Option4/pages/home/Home'
 import {Categories} from '../Option4/pages/categories/Categories'
@@ -46,6 +47,7 @@ let routes =  [
         ],
       },
       {path: "/v5",element: <Option5 />},
+      {path: "/v6",element: <Option6 />},
       {path: "*", element: <NoMatch />},
     ],
   },

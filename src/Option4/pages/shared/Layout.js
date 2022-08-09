@@ -156,7 +156,7 @@ export const Layout=()=>{
                             <h2 className="logo">@KalugyDev</h2>
                         </a>
                         <p className="company-description">
-                            Blog example to testing and learn more about layout css 
+                            Blog webpage example
                         </p>
                         <ul className="list social-media">
                             <li className="list-item">

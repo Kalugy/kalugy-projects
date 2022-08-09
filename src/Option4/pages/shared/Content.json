@@ -2,6 +2,6 @@
     "buttom":"How was build?",
     "title": "Website Example",
     "subtitle": "(html,css,scss,js)",
-    "text": "Blog Website Example, Here is a clear example of a blog now we can see more complexity. There are more pages, more code and a interesting two buttoms Sign in and Sign Up and here we can start talking about Data, because if you want to register the page the data (password and user) should be save somewhere not in the browser or your computer, there is on another server!"
+    "text": "Blog Website Example, Here is a clear example of a blog now we can see more complexity. There are more pages, more code and a interesting two buttoms Sign in and Sign Up and here we can start talking about Data, because if you want to register into this page the data (password and user) should be save somewhere not in the browser or your computer, there is another machine who will save the data and this page and return to your device so you can see the data."
 }
   

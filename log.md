@@ -408,6 +408,23 @@ template
 
 
 
+### Day 19: June 28, 2022
+##### (Finish All certifications)
+**Today's Progress** create new blog structure all code, fix all content 
+**Thoughts** i think i was overwhelmend for all the work i have to do, but yeah keep at simple it's a principal 
+just little by little and the increaase the project
+Also thinking about twitter and a little reflection:
+no matters the like you have at the end is a project
+i think time is very important and how you waste is your desicion, i think wasting in a good way that feel completed
+and good is very important
+
+**Link(s) to work**
+
+3 days break and then continue
+
+
+
+
 template
 ### Day 18: June 28, 2022
 ##### (Finish All certifications)
