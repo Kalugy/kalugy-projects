@@ -19,7 +19,7 @@ import {SignIn} from '../Option4/pages/signin/SingIn'
 import {SignUp} from '../Option4/pages/signup/SignUp'
 import {Blog} from '../Option4/pages/blog/Blog'
 import {Layout} from '../Option4/pages/shared/Layout'
-
+import {MainHome} from '../MainHome/MainHome'
 
 import './RouterNav.css'
 
@@ -48,6 +48,7 @@ let routes =  [
       },
       {path: "/v5",element: <Option5 />},
       {path: "/v6",element: <Option6 />},
+      {path: "/home",element: <MainHome />},
       {path: "*", element: <NoMatch />},
     ],
   },
@@ -83,6 +84,7 @@ function Menu() {
           <i className="fa-solid fa-bars"></i>
         </div>
         <nav className="nav-main-items" id="myButton2">
+          
           <div className="nav-main-item" >
             <Link to="/v1" className="a-link-nav-s">Html</Link>
           </div>
@@ -100,6 +102,9 @@ function Menu() {
           </div>
           <div className="nav-main-item">
             <Link to="/v6" className="a-link-nav-s">3D(Process)</Link>
+          </div>
+          <div className="nav-main-item" >
+            <Link to="/home" className="a-link-nav-s">Home</Link>
           </div>
         </nav>
       </div>

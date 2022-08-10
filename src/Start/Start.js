@@ -1,5 +1,7 @@
 import "./Start.css"
 import {componentDidMount,useEffect} from "react"
+import {Link} from "react-router-dom"
+
 export const Start = () =>{
 
     useEffect(() => {
@@ -36,7 +38,7 @@ export const Start = () =>{
                         </p>
                     </div>
                     <div className="thing"></div>
-                    <div className="start-btn" id="btn-start-p"><button>Start</button></div>
+                    <div className="start-btn" id="btn-start-p"><Link to="/home">Start</Link></div>
                 </div>
  
             </section>
