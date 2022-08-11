@@ -38,7 +38,7 @@ export const Start = () =>{
                         </p>
                     </div>
                     <div className="thing"></div>
-                    <div className="start-btn" id="btn-start-p"><Link to="/home">Start</Link></div>
+                    <Link to="/home" className="start-btn" id="btn-start-p">Start</Link>
                 </div>
  
             </section>

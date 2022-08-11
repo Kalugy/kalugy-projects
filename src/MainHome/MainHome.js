@@ -14,6 +14,8 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 import {FontLoader} from 'three/examples/jsm/loaders/FontLoader.js'
 import {TextGeometry} from 'three/examples/jsm/geometries/TextGeometry.js'
 
+import { Water } from 'three/examples/jsm/objects/Water.js' 
+import { Sky } from 'three/examples/jsm/objects/Sky.js' 
 
 const gui2 = new GUI({closed: true});
 window.addEventListener('keydown',(event)=>{
@@ -32,17 +34,18 @@ const scene = new THREE.Scene();
 
 scene.background = new THREE.Color(0xE0DDAA);
 
+/*
 const plane = new THREE.Mesh(new THREE.PlaneGeometry(500, 500), new THREE.MeshPhongMaterial({ color: 0x0a7d15 }));
 plane.rotation.x = - Math.PI / 2
 plane.position.y = -30
 plane.receiveShadow = true
 scene.add(plane);
-
+*/
 
 const width = window.innerWidth
 const height = window.innerHeight
 const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
-camera.position.set( -10, -40, 60 );
+camera.position.set( 10, 10, 60 );
 
 
 const loader = new FontLoader();
@@ -106,6 +109,63 @@ const folderCharacterGui2 = folder3.addFolder( 'Position' );
 scene.add(textMesh1)
 console.log(textMesh1)
 
+const renderer = new THREE.WebGLRenderer( { antialias: true } );
+renderer.setSize( window.innerWidth, window.innerHeight );
+
+function buildSky(){
+	const sky = new Sky()
+	sky.scale.setScalar(10000)
+	scene.add(sky)
+	return sky
+}
+function buildSun(){
+  const pmremGenerator = new THREE.PMREMGenerator(renderer);
+  const sun = new THREE.Vector3();
+
+	// Defining the x, y and z value for our 3D Vector
+  const theta = Math.PI * (0.49 - 0.5);
+  const phi = 2 * Math.PI * (0.205 - 0.5);
+  sun.x = Math.cos(phi);
+  sun.y = Math.sin(phi) * Math.sin(theta);
+  sun.z = Math.sin(phi) * Math.cos(theta);
+
+  sky.material.uniforms['sunPosition'].value.copy(sun);
+  scene.environment = pmremGenerator.fromScene(sky).texture;
+  return sun;
+}
+
+
+function buildWater() {
+  const waterGeometry = new THREE.PlaneGeometry(10000, 10000);
+  const water = new Water(
+    waterGeometry,
+    {
+      textureWidth: 512,
+      textureHeight: 512,
+      waterNormals: new THREE.TextureLoader().load('', function ( texture ) {
+        texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+      }),
+      alpha: 1.0,
+      sunDirection: new THREE.Vector3(),
+      sunColor: 0xffffff,
+      waterColor: 0x001e0f,
+      distortionScale: 3.7,
+      fog: scene.fog !== undefined
+    }
+  );
+  water.rotation.x =- Math.PI / 2;
+  water.position.y = -60
+  scene.add(water);
+  
+  const waterUniforms = water.material.uniforms;
+  return water;
+}
+
+
+const sky = buildSky();
+const sun = buildSun();
+const water = buildWater();
+
 const ambientLight2 = new THREE.AmbientLight(0xffffff,0.5)
 scene.add(ambientLight2)
 const pointLight = new THREE.PointLight(0xffffff, 0.5)
@@ -115,11 +175,16 @@ pointLight.position.z= 0
 scene.add(pointLight)
 
 
-const renderer = new THREE.WebGLRenderer( { antialias: true } );
-renderer.setSize( window.innerWidth, window.innerHeight );
-
 const controls = new OrbitControls( camera, renderer.domElement );
 controls.update();
+
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+window.addEventListener('resize', onWindowResize);
 
 
 function animation( time ) {

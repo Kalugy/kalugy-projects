@@ -81,7 +81,7 @@ function Menu() {
     <div>
       <div className="menu-navbar-main active-main-menu-p" id="main-menu-p">
         <div className="navbar-icon-con" id="myButton">
-          <i className="fa-solid fa-bars"></i>
+          <a><i className="fa-solid fa-bars"></i></a>
         </div>
         <nav className="nav-main-items" id="myButton2">
           
