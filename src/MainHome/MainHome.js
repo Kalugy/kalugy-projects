@@ -16,7 +16,7 @@ import {TextGeometry} from 'three/examples/jsm/geometries/TextGeometry.js'
 
 import { Water } from 'three/examples/jsm/objects/Water.js' 
 import { Sky } from 'three/examples/jsm/objects/Sky.js' 
-
+import './MainHome.css'
 const gui2 = new GUI({closed: true});
 window.addEventListener('keydown',(event)=>{
     if(event.key === 'j'){
@@ -186,27 +186,92 @@ function onWindowResize() {
 }
 window.addEventListener('resize', onWindowResize);
 
-
+var points=[]
+const raycaster = new THREE.Raycaster()
 function animation( time ) {
+    if(points.length > 0){
+    for(const point of points)
+    {
+        const screenPosition = point.position.clone()
+        screenPosition.project(camera)
 
+        raycaster.setFromCamera(screenPosition, camera)
+        const intersects = raycaster.intersectObjects(scene.children, true)
+
+        if(intersects.length === 0)
+        {
+            point.element.classList.add('visible')
+        }
+        else
+        {
+            const intersectionDistance = intersects[0].distance
+            const pointDistance = point.position.distanceTo(camera.position)
+
+            if(intersectionDistance < pointDistance)
+            {
+                point.element.classList.remove('visible')
+            }
+            else
+            {
+                point.element.classList.add('visible')
+            }
+        }
+
+        const translateX = screenPosition.x * window.innerWidth * 0.1
+        const translateY = - screenPosition.y * window.innerHeight * 0.1
+		const scale =1 
+        point.element.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`
+	}}
     renderer.render( scene, camera );
 
 }
 
-
+var scrolling = 0
 export const MainHome = () =>{
     
     useEffect(()=>{
         renderer.setAnimationLoop( animation );
         const elementv6 = document.querySelector("#mainHome")
         elementv6.appendChild( renderer.domElement );
+	    points = [
+			{
+				position: new THREE.Vector3(-120, 90, 0),
+				element: document.querySelector('.point-0')
+			},
+			{
+				position: new THREE.Vector3(20, -50, 0),
+				element: document.querySelector('.point-1')
+			},
+			{
+				position: new THREE.Vector3(30, - 20, - 0.7),
+				element: document.querySelector('.point-2')
+			}
+		]
+		window.addEventListener('scroll', (e) => {  
+			scrolling=window.scrollY
+		})
+		
     },[])
     // animation
 
     
     return(
         <>  
-            <div id='mainHome'></div>
+            <div id='mainHome'></div> 
+		    <div className="loading-bar"></div>
+		    <div className="point point-0">
+				<div className="label">1</div>
+				<div className="text">The main menu should be on left top corner</div>
+			</div>
+		    <div className="point point-1">
+				<div className="label">2</div>
+				<div className="text">Welcome! feel free to navigate around</div>
+			</div>
+		
+		    <div className="point point-2">
+				<div className="label">3</div>
+				<div className="text">This is Still in progress so little by little it would be new things</div>
+			</div>
         </>
     )
 }

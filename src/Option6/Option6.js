@@ -10,12 +10,14 @@ import { color } from 'd3';
 
 const gui = new GUI({closed: true});
 window.addEventListener('keydown',(event)=>{
-    if(event.key === 'h'){
+    if(event.key === 'a'){
+
         if(gui._hidden)
             gui.show()
         else    
             gui.hide()
     }
+	console.log("press Key",event.key)
 })
 
 
@@ -166,7 +168,7 @@ export const Option6 =() =>{
 
     
     return(
-        <>  <h1 style={tes}>press h</h1>
+        <>  <h1 style={tes}>press a</h1>
             <div id='v6test'></div>
         </>
     )
