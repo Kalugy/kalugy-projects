@@ -8,6 +8,7 @@ import Option3 from '../Option3/Option3'
 import {Option5} from '../Option5/Option5'
 
 import {Option6} from '../Option6/Option6'
+import { Option7 } from '../Option7/Option7'
 //Blogs
 import {Home} from '../Option4/pages/home/Home'
 import {Categories} from '../Option4/pages/categories/Categories'
@@ -48,6 +49,7 @@ let routes =  [
       },
       {path: "/v5",element: <Option5 />},
       {path: "/v6",element: <Option6 />},
+      {path: "/v7",element: <Option7 />},
       {path: "/home",element: <MainHome />},
       {path: "*", element: <NoMatch />},
     ],
@@ -101,10 +103,10 @@ function Menu() {
             <Link to="/v4" className="a-link-nav-s">Blog</Link>
           </div>
           <div className="nav-main-item">
-            <Link to="/v6" className="a-link-nav-s">3D(Process)</Link>
+            <Link to="/v6" className="a-link-nav-s">3D 1</Link>
           </div>
           <div className="nav-main-item" >
-            <Link to="/home" className="a-link-nav-s">Home</Link>
+            <Link to="/v7" className="a-link-nav-s">3d 2</Link>
           </div>
         </nav>
       </div>
