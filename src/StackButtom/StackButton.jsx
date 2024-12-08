@@ -26,9 +26,7 @@ export const StackButtom = ({content}) => {
             <h2>{content.title} <a className="close-pop-up-g" onClick={handleClosePopUp}>X</a></h2>
             <h4>{content.subtitle}</h4>
             <p> {content.text}</p>
-            <div className="content-link-g">
-                <a href="" onClick={handleLearnMore}>Want lo Learn More?</a>
-            </div>
+            
         </div>
     </>
     )
