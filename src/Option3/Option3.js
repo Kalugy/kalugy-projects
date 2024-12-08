@@ -403,13 +403,6 @@ function Option3(){
                                         </div>
                                         <div className="contact-item">
                                             <div className="iconss">
-                                                <i className="fas fa-envelope"></i>
-                                                <span>Email</span>
-                                            </div>
-                                            <p>: danieltrujillo902@gmail.com</p>
-                                        </div>
-                                        <div className="contact-item">
-                                            <div className="iconss">
                                                 <i className="fas fa-globe-africa"></i>
                                                 <span>Languages</span>
                                             </div>
@@ -418,8 +411,7 @@ function Option3(){
                                     </div>
                                     <div className="contact-icons">
                                         <div className="contact-icon">
-                                            <a href="https://twitter.com/KalugyDev" target="_blanck"><i className="fab fa-twitter"></i></a>
-                                            <a href="https://github.com/Kalugy/kalugy-projects" target="_blanck"><i className="fab fa-github"></i></a>
+                                            <a href="https://github.com/Kalugy" target="_blanck"><i className="fab fa-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
